@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA94D4BC28607EE800E68321 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4BB28607EE800E68321 /* RootController.m */; };
+		AA94D4C02860802C00E68321 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4BF2860802C00E68321 /* GCDTimer.m */; };
+		AA94D4C32860807A00E68321 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4C22860807A00E68321 /* TimerController.m */; };
 		AAAB3AE928534AFD004C4EA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AE828534AFD004C4EA8 /* AppDelegate.m */; };
 		AAAB3AEC28534AFD004C4EA8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AEB28534AFD004C4EA8 /* SceneDelegate.m */; };
 		AAAB3AEF28534AFD004C4EA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AEE28534AFD004C4EA8 /* ViewController.m */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA94D4BA28607EE800E68321 /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		AA94D4BB28607EE800E68321 /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
+		AA94D4BE2860802C00E68321 /* GCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		AA94D4BF2860802C00E68321 /* GCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		AA94D4C12860807A00E68321 /* TimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerController.h; sourceTree = "<group>"; };
+		AA94D4C22860807A00E68321 /* TimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerController.m; sourceTree = "<group>"; };
 		AAAB3AE428534AFD004C4EA8 /* 体系_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "体系_OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAB3AE728534AFD004C4EA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAAB3AE828534AFD004C4EA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA94D4BD28607FFF00E68321 /* CGD定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				AA94D4BE2860802C00E68321 /* GCDTimer.h */,
+				AA94D4BF2860802C00E68321 /* GCDTimer.m */,
+				AA94D4C12860807A00E68321 /* TimerController.h */,
+				AA94D4C22860807A00E68321 /* TimerController.m */,
+			);
+			path = "CGD定时器";
+			sourceTree = "<group>";
+		};
 		AAAB3ADB28534AFD004C4EA8 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +130,9 @@
 				AAAB3AEB28534AFD004C4EA8 /* SceneDelegate.m */,
 				AAAB3AED28534AFD004C4EA8 /* ViewController.h */,
 				AAAB3AEE28534AFD004C4EA8 /* ViewController.m */,
+				AA94D4BA28607EE800E68321 /* RootController.h */,
+				AA94D4BB28607EE800E68321 /* RootController.m */,
+				AA94D4BD28607FFF00E68321 /* CGD定时器 */,
 				AAAB3AF028534AFD004C4EA8 /* Main.storyboard */,
 				AAAB3AF328534AFE004C4EA8 /* Assets.xcassets */,
 				AAAB3AF528534AFE004C4EA8 /* LaunchScreen.storyboard */,
@@ -266,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA94D4C02860802C00E68321 /* GCDTimer.m in Sources */,
 				AAAB3AEF28534AFD004C4EA8 /* ViewController.m in Sources */,
+				AA94D4C32860807A00E68321 /* TimerController.m in Sources */,
 				AAAB3AE928534AFD004C4EA8 /* AppDelegate.m in Sources */,
 				AAAB3AFA28534AFE004C4EA8 /* main.m in Sources */,
 				AAAB3AEC28534AFD004C4EA8 /* SceneDelegate.m in Sources */,
+				AA94D4BC28607EE800E68321 /* RootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

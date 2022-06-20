@@ -17,6 +17,9 @@
 		AAAB3AC328534AE8004C4EA8 /* ___SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AC228534AE8004C4EA8 /* ___SwiftTests.swift */; };
 		AAAB3ACD28534AE8004C4EA8 /* ___SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3ACC28534AE8004C4EA8 /* ___SwiftUITests.swift */; };
 		AAAB3ACF28534AE8004C4EA8 /* ___SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3ACE28534AE8004C4EA8 /* ___SwiftUITestsLaunchTests.swift */; };
+		AAFEB538286061BC00DA1226 /* CGDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEB537286061BC00DA1226 /* CGDTimer.swift */; };
+		AAFEB53A2860756000DA1226 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEB5392860756000DA1226 /* TimerController.swift */; };
+		AAFEB53C286077C800DA1226 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEB53B286077C800DA1226 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		AAAB3AC828534AE8004C4EA8 /* 体系_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "体系_SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAB3ACC28534AE8004C4EA8 /* ___SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___SwiftUITests.swift"; sourceTree = "<group>"; };
 		AAAB3ACE28534AE8004C4EA8 /* ___SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___SwiftUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		AAFEB537286061BC00DA1226 /* CGDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDTimer.swift; sourceTree = "<group>"; };
+		AAFEB5392860756000DA1226 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		AAFEB53B286077C800DA1226 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 				AAAB3AAB28534AE7004C4EA8 /* AppDelegate.swift */,
 				AAAB3AAD28534AE7004C4EA8 /* SceneDelegate.swift */,
 				AAAB3AAF28534AE7004C4EA8 /* ViewController.swift */,
+				AAFEB53B286077C800DA1226 /* RootViewController.swift */,
+				AAFEB5362860604500DA1226 /* CGD定时器 */,
 				AA4041A928604291008F1D34 /* 泛型 */,
 				AAAB3AB128534AE7004C4EA8 /* Main.storyboard */,
 				AAAB3AB428534AE8004C4EA8 /* Assets.xcassets */,
@@ -136,6 +144,15 @@
 				AAAB3ACE28534AE8004C4EA8 /* ___SwiftUITestsLaunchTests.swift */,
 			);
 			path = "体系_SwiftUITests";
+			sourceTree = "<group>";
+		};
+		AAFEB5362860604500DA1226 /* CGD定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEB537286061BC00DA1226 /* CGDTimer.swift */,
+				AAFEB5392860756000DA1226 /* TimerController.swift */,
+			);
+			path = "CGD定时器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +289,10 @@
 				AAAB3AB028534AE7004C4EA8 /* ViewController.swift in Sources */,
 				AAAB3AAC28534AE7004C4EA8 /* AppDelegate.swift in Sources */,
 				AAAB3AAE28534AE7004C4EA8 /* SceneDelegate.swift in Sources */,
+				AAFEB53C286077C800DA1226 /* RootViewController.swift in Sources */,
+				AAFEB538286061BC00DA1226 /* CGDTimer.swift in Sources */,
 				AA4041AB286042B5008F1D34 /* Generic.swift in Sources */,
+				AAFEB53A2860756000DA1226 /* TimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
