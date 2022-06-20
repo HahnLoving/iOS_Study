@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA4041AB286042B5008F1D34 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4041AA286042B5008F1D34 /* Generic.swift */; };
 		AAAB3AAC28534AE7004C4EA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AAB28534AE7004C4EA8 /* AppDelegate.swift */; };
 		AAAB3AAE28534AE7004C4EA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AAD28534AE7004C4EA8 /* SceneDelegate.swift */; };
 		AAAB3AB028534AE7004C4EA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3AAF28534AE7004C4EA8 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA4041AA286042B5008F1D34 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		AAAB3AA828534AE7004C4EA8 /* 体系_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "体系_Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAB3AAB28534AE7004C4EA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAB3AAD28534AE7004C4EA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA4041A928604291008F1D34 /* 泛型 */ = {
+			isa = PBXGroup;
+			children = (
+				AA4041AA286042B5008F1D34 /* Generic.swift */,
+			);
+			path = "泛型";
+			sourceTree = "<group>";
+		};
 		AAAB3A9F28534AE7004C4EA8 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 				AAAB3AAB28534AE7004C4EA8 /* AppDelegate.swift */,
 				AAAB3AAD28534AE7004C4EA8 /* SceneDelegate.swift */,
 				AAAB3AAF28534AE7004C4EA8 /* ViewController.swift */,
+				AA4041A928604291008F1D34 /* 泛型 */,
 				AAAB3AB128534AE7004C4EA8 /* Main.storyboard */,
 				AAAB3AB428534AE8004C4EA8 /* Assets.xcassets */,
 				AAAB3AB628534AE8004C4EA8 /* LaunchScreen.storyboard */,
@@ -261,6 +272,7 @@
 				AAAB3AB028534AE7004C4EA8 /* ViewController.swift in Sources */,
 				AAAB3AAC28534AE7004C4EA8 /* AppDelegate.swift in Sources */,
 				AAAB3AAE28534AE7004C4EA8 /* SceneDelegate.swift in Sources */,
+				AA4041AB286042B5008F1D34 /* Generic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
