@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3AE00C2861641C00EDB11F /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3AE00B2861641C00EDB11F /* PersonModel.m */; };
+		AA3AE00F2861646B00EDB11F /* PersonModel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3AE00E2861646B00EDB11F /* PersonModel+Category.m */; };
+		AA3AE012286164E200EDB11F /* RootController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3AE011286164E200EDB11F /* RootController+Category.m */; };
 		AA94D4BC28607EE800E68321 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4BB28607EE800E68321 /* RootController.m */; };
 		AA94D4C02860802C00E68321 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4BF2860802C00E68321 /* GCDTimer.m */; };
 		AA94D4C32860807A00E68321 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4C22860807A00E68321 /* TimerController.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA3AE00A2861641C00EDB11F /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		AA3AE00B2861641C00EDB11F /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		AA3AE00D2861646B00EDB11F /* PersonModel+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonModel+Category.h"; sourceTree = "<group>"; };
+		AA3AE00E2861646B00EDB11F /* PersonModel+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonModel+Category.m"; sourceTree = "<group>"; };
+		AA3AE010286164E200EDB11F /* RootController+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RootController+Category.h"; sourceTree = "<group>"; };
+		AA3AE011286164E200EDB11F /* RootController+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RootController+Category.m"; sourceTree = "<group>"; };
 		AA94D4BA28607EE800E68321 /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
 		AA94D4BB28607EE800E68321 /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		AA94D4BE2860802C00E68321 /* GCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
@@ -63,6 +72,7 @@
 		AAAB3B0928534AFE004C4EA8 /* 体系_OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "体系_OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAB3B0D28534AFE004C4EA8 /* ___OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___OCUITests.m"; sourceTree = "<group>"; };
 		AAAB3B0F28534AFE004C4EA8 /* ___OCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___OCUITestsLaunchTests.m"; sourceTree = "<group>"; };
+		AAFBA0A928616BB9009106C2 /* PersonModel+Ex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonModel+Ex.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA3AE009286163D700EDB11F /* 分类和扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				AA3AE00D2861646B00EDB11F /* PersonModel+Category.h */,
+				AA3AE00E2861646B00EDB11F /* PersonModel+Category.m */,
+				AA3AE00A2861641C00EDB11F /* PersonModel.h */,
+				AA3AE00B2861641C00EDB11F /* PersonModel.m */,
+				AA3AE010286164E200EDB11F /* RootController+Category.h */,
+				AA3AE011286164E200EDB11F /* RootController+Category.m */,
+				AAFBA0A928616BB9009106C2 /* PersonModel+Ex.h */,
+			);
+			path = "分类和扩展";
+			sourceTree = "<group>";
+		};
 		AA94D4BD28607FFF00E68321 /* CGD定时器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +156,7 @@
 				AAAB3AEE28534AFD004C4EA8 /* ViewController.m */,
 				AA94D4BA28607EE800E68321 /* RootController.h */,
 				AA94D4BB28607EE800E68321 /* RootController.m */,
+				AA3AE009286163D700EDB11F /* 分类和扩展 */,
 				AA94D4BD28607FFF00E68321 /* CGD定时器 */,
 				AAAB3AF028534AFD004C4EA8 /* Main.storyboard */,
 				AAAB3AF328534AFE004C4EA8 /* Assets.xcassets */,
@@ -289,6 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3AE012286164E200EDB11F /* RootController+Category.m in Sources */,
+				AA3AE00F2861646B00EDB11F /* PersonModel+Category.m in Sources */,
+				AA3AE00C2861641C00EDB11F /* PersonModel.m in Sources */,
 				AA94D4C02860802C00E68321 /* GCDTimer.m in Sources */,
 				AAAB3AEF28534AFD004C4EA8 /* ViewController.m in Sources */,
 				AA94D4C32860807A00E68321 /* TimerController.m in Sources */,

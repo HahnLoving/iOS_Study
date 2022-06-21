@@ -6,6 +6,7 @@
 //
 
 #import "RootController.h"
+#import "RootController+Category.h"
 #import "TimerController.h"
 @interface RootController ()
 
@@ -23,6 +24,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+//    [self initGCDTimer];
+    [self initCategory];
+}
+
+# pragma mark - CGD定时器
+- (void)initGCDTimer{
     UIButton *btn = [UIButton new];
     [btn setTitle:@"CGD定时器" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -35,6 +42,5 @@
     TimerController *vc = [TimerController new];
     [self.navigationController pushViewController:vc animated:true];
 }
-
 
 @end
