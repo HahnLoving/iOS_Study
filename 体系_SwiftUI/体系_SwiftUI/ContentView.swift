@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var isWillShow: Bool = false
+    
     func genericDemo() {
         // MARK: 泛型例子
         showGenericNumList(numList: [1,2,3])
@@ -45,11 +47,15 @@ struct ContentView: View {
                     Text("CGD定时器")
                 }
             }
-        }
-            .onAppear {
+            .onAppear{
+//                print("name123")
                 print("name = \(self)")
-//                genericDemo()
             }
+        }
+        .onAppear {
+//            print("name = \(self)")
+//                genericDemo()
+        }
     }
 }
 
