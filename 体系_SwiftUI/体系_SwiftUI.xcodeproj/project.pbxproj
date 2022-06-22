@@ -162,6 +162,7 @@
 				AAD1C4682856CA75001EE40B /* Sources */,
 				AAD1C4692856CA75001EE40B /* Frameworks */,
 				AAD1C46A2856CA75001EE40B /* Resources */,
+				AABA8D9928636CA3000923C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -276,6 +277,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AABA8D9928636CA3000923C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# 文件夹名称\nFILENAME=\"IpaBuild\"\n\n# 测试包脚本名字\nBUILDNAME=\"ipaBuild\"\n# 上传FTP脚本名字\nFTPNAME=\"ipaUpload\"\n# 测试包并上FTP脚本名字\nBUILDWITHFTPNAME=\"ipaBuildAndUpload\"\n\n# 项目构建目录\nPRODUCTS_PATH=\"${BUILT_PRODUCTS_DIR}\"\n# 项目目录\nTARGET_APP_PATH=\"$PRODUCTS_PATH/${TARGET_NAME}.app\"\n# 打包项目名字\n#APPNAME=\"${TARGET_NAME}\"\nAPPNAME=\"appstore\"\n\n# FTP上传-项目根目录\nUPLOADFILENAMEBEFORE=\"${SRCROOT}\"\n# FTP上传-包\nUPLOADFILENAME=\"/$BUILDNAME/$APPNAME.ipa\"\n# FTP地址\nHOST=\"xxx.xxx.x.xx\"\n# FTP账号\nUSERNAME=\"xxx\"\n# FTP密码\nPASSWORD=\"xxx\"\n# FTP路径\nHOSTFILEPATH=\"/xxx/xxx/xxx/\"\n\n# 每次构建都清理目录\nrm -rf $FILENAME\nmkdir -p $FILENAME\n\n# 测试包脚本\ncd $FILENAME\ntouch $BUILDNAME.command\nchmod +x $BUILDNAME.command\necho \"#!/bin/bash\" >> $BUILDNAME.command\necho 'cd `dirname $0`;' >> $BUILDNAME.command\necho \"mkdir Payload;\" >> $BUILDNAME.command\necho \"echo =============================打包中=============================;\" >> $BUILDNAME.command\necho \"${BUILT_PRODUCTS}\"\necho \"cp -rf $TARGET_APP_PATH Payload;\" >> $BUILDNAME.command\necho \"zip -r -q $APPNAME.ipa Payload;\" >> $BUILDNAME.command\necho \"rm -rf Payload;\" >> $BUILDNAME.command\necho \"echo =============================打包完成=============================;\" >> $BUILDNAME.command\necho \"exit;\" >> $BUILDNAME.command\n\n# 上传FTP脚本\ncd $FILENAME\ntouch $FTPNAME.command\nchmod +x $FTPNAME.command\necho \"#!/usr/bin/expect -f\" >> $FTPNAME.command\necho \"set uploadFileNameBefore $UPLOADFILENAMEBEFORE\" >> $FTPNAME.command\necho \"set uploadFileName $UPLOADFILENAME\" >> $FTPNAME.command\necho \"set host $HOST\" >> $FTPNAME.command\necho \"set username $USERNAME\" >> $FTPNAME.command\necho \"set password $PASSWORD\" >> $FTPNAME.command\necho \"spawn sftp $USERNAME@$HOST\" >> $FTPNAME.command\necho 'expect {\n        \"(yes/no)?\" {send \"yes\\r\"; exp_continue}\n        \"password:\" {send \"'$PASSWORD'\\r\"}\n    }' >> $FTPNAME.command\necho 'expect \"sftp>\"' >> $FTPNAME.command\necho 'send \"cd '$HOSTFILEPATH'\\r\"' >> $FTPNAME.command\necho 'expect \"sftp>\"' >> $FTPNAME.command\necho 'send \"put '$UPLOADFILENAMEBEFORE''$UPLOADFILENAME'\\r\"' >> $FTPNAME.command\necho 'expect \"sftp>\"' >> $FTPNAME.command\necho 'send \"bye\\r\"' >> $FTPNAME.command\necho \"expect eof\" >> $FTPNAME.command\n\n# 测试包并上FTP脚本\ncd $FILENAME\ntouch $BUILDWITHFTPNAME.command\nchmod +x $BUILDWITHFTPNAME.command\necho \"#!/bin/bash\" >> $BUILDWITHFTPNAME.command\necho 'cd `dirname $0`;' >> $BUILDWITHFTPNAME.command\necho \"mkdir Payload;\" >> $BUILDWITHFTPNAME.command\necho \"echo =============================打包中=============================;\" >> $BUILDWITHFTPNAME.command\necho \"${BUILT_PRODUCTS}\"\necho \"cp -rf $TARGET_APP_PATH Payload;\" >> $BUILDWITHFTPNAME.command\necho \"zip -r -q $APPNAME.ipa Payload;\" >> $BUILDWITHFTPNAME.command\necho \"rm -rf Payload;\" >> $BUILDWITHFTPNAME.command\necho \"echo =============================打包完成=============================;\" >> $BUILDWITHFTPNAME.command\necho \"open $UPLOADFILENAMEBEFORE/$FILENAME/$FTPNAME.command\" >> $BUILDWITHFTPNAME.command\necho \"exit;\" >> $BUILDWITHFTPNAME.command\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAD1C4682856CA75001EE40B /* Sources */ = {
