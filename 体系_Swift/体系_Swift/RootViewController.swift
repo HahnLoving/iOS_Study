@@ -44,12 +44,44 @@ class RootViewController: UIViewController {
         
         
         // MARK: CGD定时器
-        let btn = UIButton()
-        btn.setTitleColor(.red, for: .normal)
-        btn.setTitle("CGD定时器", for: .normal)
-        btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
-        btn.addTarget(self, action: #selector(clicktBtn), for: .touchUpInside)
-        self.view.addSubview(btn)
+//        let btn = UIButton()
+//        btn.setTitleColor(.red, for: .normal)
+//        btn.setTitle("CGD定时器", for: .normal)
+//        btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
+//        btn.addTarget(self, action: #selector(clicktBtn), for: .touchUpInside)
+//        self.view.addSubview(btn)
+        
+        // MARK: Swift高阶函数
+//        // map
+//        mapDemo()
+//        mapListDemo()
+//        
+//        // flatMap
+//        flatMapDemo()
+//        flatMapListDemo()
+//
+//        // compactMap
+//        compactMapDemo()
+//        compactMapListDemo()
+//
+//        
+//        // map 和 flatMap 和 compactMap区别
+//        mapAndFlatMapAndCompactMapDiffent()
+//
+//        // reduce
+//        reduceDemo()
+//
+//        // filter
+//        filterDemo()
+//
+//        // shuffled
+//        shuffledDemo()
+        
+        // prefix
+        prefixDemo()
+        
+        // suffix
+        suffixDemo()
     }
     
 

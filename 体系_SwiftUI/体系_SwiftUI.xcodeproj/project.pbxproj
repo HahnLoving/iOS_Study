@@ -10,6 +10,7 @@
 		AA94D4B928607C9A00E68321 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94D4B828607C9A00E68321 /* TimerView.swift */; };
 		AA95846728607B960039EE1F /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95846628607B960039EE1F /* Generic.swift */; };
 		AA95846928607C400039EE1F /* CGDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95846828607C400039EE1F /* CGDTimer.swift */; };
+		AABA8DA328644336000923C4 /* SwiftSenior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABA8DA228644336000923C4 /* SwiftSenior.swift */; };
 		AAD1C4702856CA75001EE40B /* ___SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1C46F2856CA75001EE40B /* ___SwiftUIApp.swift */; };
 		AAD1C4722856CA75001EE40B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1C4712856CA75001EE40B /* ContentView.swift */; };
 		AAD1C4742856CA75001EE40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD1C4732856CA75001EE40B /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		AA94D4B828607C9A00E68321 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		AA95846628607B960039EE1F /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		AA95846828607C400039EE1F /* CGDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDTimer.swift; sourceTree = "<group>"; };
+		AABA8DA228644336000923C4 /* SwiftSenior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSenior.swift; sourceTree = "<group>"; };
 		AAD1C46C2856CA75001EE40B /* 体系_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "体系_SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD1C46F2856CA75001EE40B /* ___SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___SwiftUIApp.swift"; sourceTree = "<group>"; };
 		AAD1C4712856CA75001EE40B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = "CGD定时器";
 			sourceTree = "<group>";
 		};
+		AABA8DA128644319000923C4 /* Swift高阶函数 */ = {
+			isa = PBXGroup;
+			children = (
+				AABA8DA228644336000923C4 /* SwiftSenior.swift */,
+			);
+			path = "Swift高阶函数";
+			sourceTree = "<group>";
+		};
 		AAD1C4632856CA74001EE40B = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 			children = (
 				AAD1C46F2856CA75001EE40B /* ___SwiftUIApp.swift */,
 				AAD1C4712856CA75001EE40B /* ContentView.swift */,
+				AABA8DA128644319000923C4 /* Swift高阶函数 */,
 				AA95846A28607C430039EE1F /* CGD定时器 */,
 				AAFEB53D28607B6100DA1226 /* 泛型 */,
 				AAD1C4732856CA75001EE40B /* Assets.xcassets */,
@@ -308,6 +319,7 @@
 				AAD1C4722856CA75001EE40B /* ContentView.swift in Sources */,
 				AAD1C4702856CA75001EE40B /* ___SwiftUIApp.swift in Sources */,
 				AA95846728607B960039EE1F /* Generic.swift in Sources */,
+				AABA8DA328644336000923C4 /* SwiftSenior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,6 +50,7 @@ struct ContentView: View {
             .onAppear{
 //                print("name123")
                 print("name = \(self)")
+                swiftSeniorDemo()
             }
         }
         .onAppear {
