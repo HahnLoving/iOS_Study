@@ -1,12 +1,12 @@
 //
 //  SceneDelegate.m
-//  体系_OC
+//  StudyOC
 //
 //  Created by z Hahn on 2022/6/10.
 //
 
 #import "SceneDelegate.h"
-#import "RootController.h""
+#import "RootController.h"
 
 @interface SceneDelegate ()
 
@@ -27,6 +27,10 @@
     [self.window makeKeyWindow];
 }
 
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts
+{
+    NSLog(@"交互 = %@",URLContexts.allObjects.firstObject.URL);
+}
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
     // Called as the scene is being released by the system.

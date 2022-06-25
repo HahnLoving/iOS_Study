@@ -1,6 +1,6 @@
 //
 //  RootController.m
-//  体系_OC
+//  StudyOC
 //
 //  Created by z Hahn on 2022/6/20.
 //
@@ -8,6 +8,8 @@
 #import "RootController.h"
 #import "RootController+Category.h"
 #import "TimerController.h"
+#import "WidgetController.h"
+
 @interface RootController ()
 
 @end
@@ -25,17 +27,9 @@
     // Do any additional setup after loading the view.
     
 //    [self initGCDTimer];
-    [self initCategory];
+//    [self initCategory];
+    [self initWidget];
     
-    //使用 Groups ID 初始化一个供 App Groups 使用的 NSUserDefaults 对象
-    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.zhahntest"];
-
-    //写入数据
-    [userDefaults setValue:@"123456789" forKey:@"userID"];
-
-    //读取数据
-    NSString *userIDStr = [userDefaults valueForKey:@"userID"];
-    NSLog(@"zzr123 = %@",userIDStr);
 }
 
 # pragma mark - CGD定时器
@@ -50,6 +44,33 @@
 
 - (void)clicktBtn{
     TimerController *vc = [TimerController new];
+    [self.navigationController pushViewController:vc animated:true];
+}
+
+# pragma mark - 小组件
+- (void)initWidget{
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.baidu.com"]];
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:req completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            //data: 响应体信息
+            //response: 响应头信息
+            //error: 错误信息�
+            //解析数据
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            NSLog(@"%@", dict);
+        }];
+        [dataTask resume];
+    
+    UIButton *btn = [UIButton new];
+    [btn setTitle:@"小组件" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(0, 100, 100, 100);
+    [btn addTarget:self action:@selector(clicktBtn1) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)clicktBtn1{
+    WidgetController *vc = [WidgetController new];
     [self.navigationController pushViewController:vc animated:true];
 }
 

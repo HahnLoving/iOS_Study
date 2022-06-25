@@ -24,7 +24,7 @@ struct AppDataProvider: IntentTimelineProvider {
     func getTimeline(for configuration: AppDataIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         
         let z = UserDefaults.init(suiteName: "group.zhahntest")
-        let AppData = z?.value(forKey: "demo1")
+        let AppData = z?.value(forKey: "demo")
         print("AppData = \(AppData)")
         
         // 每隔2个小时刷新。
@@ -49,10 +49,41 @@ struct AppDataEntryView : View {
     var entry: AppDataProvider.Entry
 
     var body: some View {
-        Text(entry.str)
+        VStack
+        {
+            // 和App数据交互
+            Text(entry.str)
+            Spacer()
+            // 点击交互
+            HStack
+            {
+                Link(destination: URL(string: "https://www.baidu.com?str=left")!) {
+                    // 左 View
+                    leftView()
+                }
+                Spacer()
+                    .frame(width: 20)
+
+                // 右 View
+                Text("right")
+                .widgetURL(URL(string: "https://www.baidu.com?str=right"))
+                
+            }
+        }
     }
 }
 
+
+struct leftView : View {
+
+    var body: some View {
+        
+        HStack {
+            
+            Text("Left")
+        }
+    }
+}
 
 // 单个
 //@main
@@ -67,7 +98,7 @@ struct AppData: Widget {
         }
         .configurationDisplayName(title)
         .description(desc)
-        .supportedFamilies([.systemMedium, .systemSmall])
+        .supportedFamilies([.systemMedium])
 //        .supportedFamilies([.systemMedium, .systemLarge, .systemSmall])
     }
 }

@@ -1,6 +1,6 @@
 //
 //  RootViewController.swift
-//  体系_Swift
+//  StudySwift
 //
 //  Created by z Hahn on 2022/6/20.
 //
@@ -78,10 +78,39 @@ class RootViewController: UIViewController {
 //        shuffledDemo()
         
         // prefix
-        prefixDemo()
+//        prefixDemo()
+//
+//        // suffix
+//        suffixDemo()
         
-        // suffix
-        suffixDemo()
+        //1、创建URL对象；
+              let url:URL! = URL(string:"http://api.3g.ifeng.com/clientShortNews?type=beauty");
+                
+              //2、创建Request对象；
+             let urlRequest:URLRequest = URLRequest(url:url);
+                
+             //3、创建会话
+             let session = URLSession.shared
+                
+             //4、通过创建任务
+             let dataTask = session.dataTask(with: urlRequest) { (data:Data?, response:URLResponse?, error:Error?) in
+                    
+                  if(error != nil){
+                       print(error?.localizedDescription);
+                  }else{
+                        //let jsonStr = String(data: data!, encoding:String.Encoding.utf8);
+                        //print(jsonStr)
+                      do {
+                            let dic = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                            print(dic)
+                        } catch let error{
+                            print(error.localizedDescription);
+                        }
+                    }
+                } as URLSessionDataTask
+                
+                //5、启动任务
+                dataTask.resume()
     }
     
 

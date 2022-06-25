@@ -17,17 +17,10 @@ struct TestWidget: View {
                     // appgroup
                     let z = UserDefaults.init(suiteName: "group.zhahntest")
                     // 保存数据
-                    z?.set("demo", forKey: "demo1")
-                    let demo = z?.value(forKey: "demo1")
+                    z?.set("demo", forKey: "demo")
+                    let demo = z?.value(forKey: "demo")
                     print("AppGroup交互 = \(String(describing: demo))")
                     
-                    // 全部刷新
-                    WidgetCenter.shared.reloadAllTimelines()
-//                    WidgetCenter.shared.reloadTimelines(ofKind: <#T##String#>)
-                }
-                .frame(width: 100, height: 100)
-            Text("小组件刷新")
-                .onTapGesture {
                     // 全部刷新
                     WidgetCenter.shared.reloadAllTimelines()
                     // 刷新指定的kind

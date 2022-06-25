@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  体系_Swift
+//  StudySwift
 //
 //  Created by z Hahn on 2022/6/10.
 //

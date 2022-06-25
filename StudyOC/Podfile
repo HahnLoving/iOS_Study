@@ -1,0 +1,19 @@
+platform :ios, '14.0'
+use_frameworks!
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'StudyOC' do
+
+# swift
+end
+
+# Extension 名字  在Targets里面可以查看名字
+target 'MainExtension' do
+  pod 'ObjectMapper'
+  pod 'Moya'
+  pod 'ObjectMapper'
+  pod 'HandyJSON'
+  pod 'SwiftyJSON'
+end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6BBDFEDA2F4CE3FBAA343BF9 /* Pods_MainExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF617905CADDD2B3BE918F6 /* Pods_MainExtension.framework */; };
 		AA013V958V7EGF6K3632251R /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFV34070N27EG192Y944996 /* Generic.swift */; };
+		AA098AB12866B0A000192637 /* StudySwiftUI.entitlements in Sources */ = {isa = PBXBuildFile; fileRef = AA098AB02866B0A000192637 /* StudySwiftUI.entitlements */; };
 		AA29282ZU5Q950A234O46T4A /* ___SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA777P9Q50L1KZB61Y0647Y0 /* ___SwiftUIApp.swift */; };
 		AA2IE53R59O391B4G30E995P /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAH10K762J16I87QAB446944 /* TimerView.swift */; };
 		AA65B212G24F24R44YC6300L /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAOR79Z7882Y351L8184I53B /* ContentView.swift */; };
@@ -29,7 +30,6 @@
 		AA8F2F8D2865FF3A002C4719 /* NetWorkData.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA14R0471Y5G082FJ8X54571 /* NetWorkData.intentdefinition */; };
 		AA8F2F8E2865FF3C002C4719 /* NetWorkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAS7Y5534L9M310034607848 /* NetWorkImage.swift */; };
 		AA8F2F8F2865FF3F002C4719 /* NetWorkImage.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA8F2F2B2865F277002C4719 /* NetWorkImage.intentdefinition */; };
-		AA8F2F902865FF41002C4719 /* Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D836061SEQ3JXI7532081 /* Interaction.swift */; };
 		AA8F2F912865FF43002C4719 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4X21NC85J202595E536206 /* Edit.swift */; };
 		AA8F2F922865FF45002C4719 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA627KQZ27VT4827077O7N31 /* AppData.swift */; };
 		AA8F2F932865FF48002C4719 /* AppData.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA82UD173T33A285N1EBMXKH /* AppData.intentdefinition */; };
@@ -75,6 +75,7 @@
 		7DJ3583Z8GT90MNU00T714YU /* Pods-MyWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-MyWidgetExtension/Pods-MyWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		90C0FF7C00B5D46AFA282034 /* Pods_StudySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		978F20E7B48D6B3D87E72EFE /* Pods-MainExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainExtension.debug.xcconfig"; path = "Target Support Files/Pods-MainExtension/Pods-MainExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		AA098AB02866B0A000192637 /* StudySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudySwiftUI.entitlements; sourceTree = "<group>"; };
 		AA0A4054UBW5I5YZ2G60I535 /* StudySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA14R0471Y5G082FJ8X54571 /* NetWorkData.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NetWorkData.intentdefinition; sourceTree = "<group>"; };
 		AA2395H9E3966LQ0L74355Y5 /* ZModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZModel.swift; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		AA5LJ2I10Y7820M10405G98R /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA618478ELR0Q9A4E14A53X0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AA627KQZ27VT4827077O7N31 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
-		AA6D836061SEQ3JXI7532081 /* Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interaction.swift; sourceTree = "<group>"; };
 		AA777P9Q50L1KZB61Y0647Y0 /* ___SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___SwiftUIApp.swift"; sourceTree = "<group>"; };
 		AA82J896FE2S429KES2NQ641 /* MoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
 		AA82UD173T33A285N1EBMXKH /* AppData.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AppData.intentdefinition; sourceTree = "<group>"; };
@@ -97,7 +97,6 @@
 		AA8F2F7E2865FEFA002C4719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA8F2F802865FEFA002C4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA8F2F942866969C002C4719 /* Edit.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Edit.intentdefinition; sourceTree = "<group>"; };
-		AA8F2F9728669D30002C4719 /* StudySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudySwiftUI.entitlements; sourceTree = "<group>"; };
 		AA8F2F9828669D43002C4719 /* MainExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainExtension.entitlements; sourceTree = "<group>"; };
 		AA8F2F9A28669E49002C4719 /* TestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWidget.swift; sourceTree = "<group>"; };
 		AA9M551584597D0TOEP45N87 /* ---SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "---SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -170,7 +169,7 @@
 		AA38Y7J8Z475O4298U15Y099 /* StudySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				AA8F2F9728669D30002C4719 /* StudySwiftUI.entitlements */,
+				AA098AB02866B0A000192637 /* StudySwiftUI.entitlements */,
 				AA9M551584597D0TOEP45N87 /* ---SwiftUI-Info.plist */,
 				AA777P9Q50L1KZB61Y0647Y0 /* ___SwiftUIApp.swift */,
 				AAOR79Z7882Y351L8184I53B /* ContentView.swift */,
@@ -191,7 +190,6 @@
 				AA14R0471Y5G082FJ8X54571 /* NetWorkData.intentdefinition */,
 				AAS7Y5534L9M310034607848 /* NetWorkImage.swift */,
 				AA8F2F2B2865F277002C4719 /* NetWorkImage.intentdefinition */,
-				AA6D836061SEQ3JXI7532081 /* Interaction.swift */,
 				AA4X21NC85J202595E536206 /* Edit.swift */,
 				AA8F2F942866969C002C4719 /* Edit.intentdefinition */,
 				AA627KQZ27VT4827077O7N31 /* AppData.swift */,
@@ -474,6 +472,7 @@
 				AA29282ZU5Q950A234O46T4A /* ___SwiftUIApp.swift in Sources */,
 				AA013V958V7EGF6K3632251R /* Generic.swift in Sources */,
 				AAN815E954EF2APA6765E663 /* AppData.intentdefinition in Sources */,
+				AA098AB12866B0A000192637 /* StudySwiftUI.entitlements in Sources */,
 				AAK392BJ2Y3201A05ON4B8T2 /* SwiftSenior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +492,6 @@
 				AA8F2F8A2865FF33002C4719 /* WidgetImageLoader.swift in Sources */,
 				AA8F2F8E2865FF3C002C4719 /* NetWorkImage.swift in Sources */,
 				AA8F2F8C2865FF38002C4719 /* NetWorkData.swift in Sources */,
-				AA8F2F902865FF41002C4719 /* Interaction.swift in Sources */,
 				AA8F2F962866969C002C4719 /* Edit.intentdefinition in Sources */,
 				AA8F2F932865FF48002C4719 /* AppData.intentdefinition in Sources */,
 				AA8F2F912865FF43002C4719 /* Edit.swift in Sources */,
