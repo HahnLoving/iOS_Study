@@ -1,15 +1,16 @@
 //
-//  RootController+Category.m
+//  BaseController+Category.m
 //  StudyOC
 //
-//  Created by z Hahn on 2022/6/21.
+//  Created by z Hahn on 2022/7/22.
 //
 
-#import "RootController+Category.h"
+#import "BaseController+Category.h"
+#import "PersonModel.h"
 #import "PersonModel+Category.h"
 #import "PersonModel+Ex.h"
 
-@implementation RootController (Ex)
+@implementation BaseController (Category)
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -32,7 +33,6 @@
     
     [person exDemo];
 }
-
 
 
 @end

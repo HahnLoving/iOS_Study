@@ -28,6 +28,38 @@ struct TestWidget: View {
                 }
                 .frame(width: 100, height: 100)
         }
+        .navigationTitle("小组件")
+        .onAppear {
+            print("name = \(self)")
+            //1、创建URL对象；
+            let url:URL! = URL(string:"http://baidu.com");
+
+            //2、创建Request对象；
+            let urlRequest:URLRequest = URLRequest(url:url);
+
+            //3、创建会话
+            let session = URLSession.shared
+
+            //4、通过创建任务
+            let dataTask = session.dataTask(with: urlRequest) { (data:Data?, response:URLResponse?, error:Error?) in
+                
+              if(error != nil){
+                   print(error?.localizedDescription);
+              }else{
+                    //let jsonStr = String(data: data!, encoding:String.Encoding.utf8);
+                    //print(jsonStr)
+                  do {
+                        let dic = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                        print(dic)
+                    } catch let error{
+                        print(error.localizedDescription);
+                    }
+                }
+            } as URLSessionDataTask
+
+            //5、启动任务
+            dataTask.resume()
+        }
     }
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TimerController: UIViewController {
+class TimerController: BaseController {
     
     private var timer: CGDTimer = CGDTimer()
     

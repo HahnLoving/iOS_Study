@@ -6,15 +6,31 @@
 //
 
 #import "RootController.h"
-#import "RootController+Category.h"
+#import "BaseController.h"
+#import "BaseModel.h"
+#import "BaseController+Category.h"
 #import "TimerController.h"
 #import "WidgetController.h"
 
-@interface RootController ()
+@interface RootController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *array;
 
 @end
 
 @implementation RootController
+
+- (NSArray *)array {
+    if (!_array) {
+        _array = @[
+            [NSNumber numberWithInteger:CellTypeWidget],
+            [NSNumber numberWithInteger:CellTypeCategory],
+            [NSNumber numberWithInteger:CellTypeCGDTimer]
+        ];
+    }
+    return _array;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -26,52 +42,67 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    [self initGCDTimer];
-//    [self initCategory];
-    [self initWidget];
-    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 }
 
-# pragma mark - CGD定时器
-- (void)initGCDTimer{
-    UIButton *btn = [UIButton new];
-    [btn setTitle:@"CGD定时器" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(0, 100, 100, 100);
-    [btn addTarget:self action:@selector(clicktBtn) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+#pragma mark - UITableViewDelegate UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.array.count;
 }
 
-- (void)clicktBtn{
-    TimerController *vc = [TimerController new];
-    [self.navigationController pushViewController:vc animated:true];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [UITableViewCell new];
+    switch (indexPath.row) {
+        case CellTypeWidget:
+            cell.textLabel.text = @"小组件";
+            break;
+            
+        case CellTypeCategory:
+            cell.textLabel.text = @"分类";
+            break;
+            
+        case CellTypeCGDTimer:
+            cell.textLabel.text = @"CGD 定时器";
+            break;
+            
+        default:
+            break;
+    }
+    return cell;
 }
 
-# pragma mark - 小组件
-- (void)initWidget{
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.baidu.com"]];
-        NSURLSession *session = [NSURLSession sharedSession];
-        NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:req completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            //data: 响应体信息
-            //response: 响应头信息
-            //error: 错误信息�
-            //解析数据
-            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-            NSLog(@"%@", dict);
-        }];
-        [dataTask resume];
-    
-    UIButton *btn = [UIButton new];
-    [btn setTitle:@"小组件" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(0, 100, 100, 100);
-    [btn addTarget:self action:@selector(clicktBtn1) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-}
-
-- (void)clicktBtn1{
-    WidgetController *vc = [WidgetController new];
-    [self.navigationController pushViewController:vc animated:true];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case CellTypeWidget:
+        {
+            WidgetController *vc = [WidgetController new];
+            vc.type = CellTypeWidget;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case CellTypeCategory:
+        {
+            BaseController *vc = [BaseController new];
+            vc.type = CellTypeCategory;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case CellTypeCGDTimer:
+        {
+            TimerController *vc = [TimerController new];
+            vc.type = CellTypeCGDTimer;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

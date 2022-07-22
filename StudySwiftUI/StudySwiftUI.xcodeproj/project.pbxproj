@@ -37,6 +37,9 @@
 		AA8F2F962866969C002C4719 /* Edit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA8F2F942866969C002C4719 /* Edit.intentdefinition */; };
 		AA8F2F9B28669E49002C4719 /* TestWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8F2F9A28669E49002C4719 /* TestWidget.swift */; };
 		AAC32R2WTL510J90Y63O8953 /* CGDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B100M48IL9B07Z4193562 /* CGDTimer.swift */; };
+		AAD95A93288AAB6300766570 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A92288AAB6300766570 /* General.swift */; };
+		AAD95A95288AEE8400766570 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A94288AEE8400766570 /* GenericView.swift */; };
+		AAD95A97288AF00500766570 /* SwiftSeniorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A96288AF00500766570 /* SwiftSeniorView.swift */; };
 		AAK392BJ2Y3201A05ON4B8T2 /* SwiftSenior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2IZJ40N26745IK00Y34137 /* SwiftSenior.swift */; };
 		AAN815E954EF2APA6765E663 /* AppData.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA82UD173T33A285N1EBMXKH /* AppData.intentdefinition */; };
 		AAR22H45535998511LR7X72K /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAX059M12356L12714E226L2 /* Assets.xcassets */; };
@@ -100,6 +103,9 @@
 		AA8F2F9828669D43002C4719 /* MainExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainExtension.entitlements; sourceTree = "<group>"; };
 		AA8F2F9A28669E49002C4719 /* TestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWidget.swift; sourceTree = "<group>"; };
 		AA9M551584597D0TOEP45N87 /* ---SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "---SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AAD95A92288AAB6300766570 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		AAD95A94288AEE8400766570 /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		AAD95A96288AF00500766570 /* SwiftSeniorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSeniorView.swift; sourceTree = "<group>"; };
 		AAFV34070N27EG192Y944996 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		AAH10K762J16I87QAB446944 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		AAOR79Z7882Y351L8184I53B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 				AA9M551584597D0TOEP45N87 /* ---SwiftUI-Info.plist */,
 				AA777P9Q50L1KZB61Y0647Y0 /* ___SwiftUIApp.swift */,
 				AAOR79Z7882Y351L8184I53B /* ContentView.swift */,
+				AAD95A8F288AAB3C00766570 /* Base */,
 				AA8F2F9928669E31002C4719 /* 小组件 */,
 				AAB93GK40E7BW951295DZ905 /* Swift高阶函数 */,
 				AAA347IJ63D140A3W5C2T660 /* CGD定时器 */,
@@ -214,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				AAFV34070N27EG192Y944996 /* Generic.swift */,
+				AAD95A94288AEE8400766570 /* GenericView.swift */,
 			);
 			path = "泛型";
 			sourceTree = "<group>";
@@ -251,8 +259,17 @@
 			isa = PBXGroup;
 			children = (
 				AA2IZJ40N26745IK00Y34137 /* SwiftSenior.swift */,
+				AAD95A96288AF00500766570 /* SwiftSeniorView.swift */,
 			);
 			path = "Swift高阶函数";
+			sourceTree = "<group>";
+		};
+		AAD95A8F288AAB3C00766570 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AAD95A92288AAB6300766570 /* General.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		AAT861TC8546298B49KC8C75 /* Products */ = {
@@ -467,12 +484,15 @@
 				AA8F2F952866969C002C4719 /* Edit.intentdefinition in Sources */,
 				AAC32R2WTL510J90Y63O8953 /* CGDTimer.swift in Sources */,
 				AA65B212G24F24R44YC6300L /* ContentView.swift in Sources */,
+				AAD95A95288AEE8400766570 /* GenericView.swift in Sources */,
 				AA8F2F9B28669E49002C4719 /* TestWidget.swift in Sources */,
+				AAD95A97288AF00500766570 /* SwiftSeniorView.swift in Sources */,
 				AA8F2F2C2865F277002C4719 /* NetWorkImage.intentdefinition in Sources */,
 				AA29282ZU5Q950A234O46T4A /* ___SwiftUIApp.swift in Sources */,
 				AA013V958V7EGF6K3632251R /* Generic.swift in Sources */,
 				AAN815E954EF2APA6765E663 /* AppData.intentdefinition in Sources */,
 				AA098AB12866B0A000192637 /* StudySwiftUI.entitlements in Sources */,
+				AAD95A93288AAB6300766570 /* General.swift in Sources */,
 				AAK392BJ2Y3201A05ON4B8T2 /* SwiftSenior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

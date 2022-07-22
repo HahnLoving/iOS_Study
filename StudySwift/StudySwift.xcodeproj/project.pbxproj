@@ -42,6 +42,8 @@
 		AAAF07CA2866C4EB004F8B9C /* NetWorkImage.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07AE2866C4AC004F8B9C /* NetWorkImage.intentdefinition */; };
 		AAAF07CB2866C4EE004F8B9C /* NetWorkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07AC2866C4AC004F8B9C /* NetWorkImage.swift */; };
 		AAAF07CE2866FFD8004F8B9C /* WidgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */; };
+		AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A8A288AA4DA00766570 /* BaseController.swift */; };
+		AAD95A8E288AA50000766570 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A8D288AA50000766570 /* General.swift */; };
 		AAL48824555C8M9785J9BI1U /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA970M0K29N393I0016ANHE8 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,8 @@
 		AAAF07AF2866C4AC004F8B9C /* Edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
 		AAAF07B02866C4AC004F8B9C /* AppData.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = AppData.intentdefinition; sourceTree = "<group>"; };
 		AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetController.swift; sourceTree = "<group>"; };
+		AAD95A8A288AA4DA00766570 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		AAD95A8D288AA50000766570 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		AAQG0B3Y3B18NE4GN43XVYH9 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		AAQPU24732U1BH6103N6Z444 /* SwiftSenior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSenior.swift; sourceTree = "<group>"; };
 		BBF0E2262969B2CE37F7A857 /* Pods_StudySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +158,7 @@
 				AA970M0K29N393I0016ANHE8 /* SceneDelegate.swift */,
 				AA09059W6159SG9PX2J5425T /* ViewController.swift */,
 				AA8J14C9838W243382W3T96P /* RootViewController.swift */,
+				AAD95A8C288AA4DE00766570 /* Base */,
 				AAAF07CC2866C504004F8B9C /* 小组件 */,
 				AA87FI72GLE1029450CH1H38 /* Swift高阶函数 */,
 				AA143Q321I3CVHO530117H7E /* CGD定时器 */,
@@ -270,6 +275,15 @@
 				AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */,
 			);
 			path = "小组件";
+			sourceTree = "<group>";
+		};
+		AAD95A8C288AA4DE00766570 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AAD95A8A288AA4DA00766570 /* BaseController.swift */,
+				AAD95A8D288AA50000766570 /* General.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,12 +475,14 @@
 			files = (
 				AA35W3Y3123146N17Z8N78J3 /* ViewController.swift in Sources */,
 				AA7VH042293100H3037V43W1 /* SwiftSenior.swift in Sources */,
+				AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */,
 				AA8X1ZFBUP305J612352713B /* AppDelegate.swift in Sources */,
 				AAAF07B82866C4AC004F8B9C /* Edit.intentdefinition in Sources */,
 				AAL48824555C8M9785J9BI1U /* SceneDelegate.swift in Sources */,
 				AA0K2F8L824XV30MIK7W3VS4 /* RootViewController.swift in Sources */,
 				AAAF07BD2866C4AC004F8B9C /* AppData.intentdefinition in Sources */,
 				AA2O255950404QH010203OB9 /* CGDTimer.swift in Sources */,
+				AAD95A8E288AA50000766570 /* General.swift in Sources */,
 				AA20S5301836NVF03489ZA04 /* Generic.swift in Sources */,
 				AAAF07CE2866FFD8004F8B9C /* WidgetController.swift in Sources */,
 				AA181K35XZM15I162M973614 /* TimerController.swift in Sources */,

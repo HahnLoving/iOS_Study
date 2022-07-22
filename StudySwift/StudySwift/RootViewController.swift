@@ -9,6 +9,9 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+    var tableView: UITableView = UITableView()
+    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic]
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("name = \(self)")
@@ -17,133 +20,62 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.tableView = UITableView(frame: self.view.bounds)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.view.addSubview(self.tableView)
 //        self.initGeneric()
 //        self.initGCDTimer()
 //        self.initSenior()
-        self.initWidget()
+//        self.initWidget()
         
     }
     
-    // MARK: 小组件
-    func initWidget() {
-        //1、创建URL对象；
-      let url:URL! = URL(string:"http://api.3g.ifeng.com/clientShortNews?type=beauty");
-        
-      //2、创建Request对象；
-     let urlRequest:URLRequest = URLRequest(url:url);
-        
-     //3、创建会话
-     let session = URLSession.shared
-        
-     //4、通过创建任务
-     let dataTask = session.dataTask(with: urlRequest) { (data:Data?, response:URLResponse?, error:Error?) in
-            
-          if(error != nil){
-               print(error?.localizedDescription);
-          }else{
-                //let jsonStr = String(data: data!, encoding:String.Encoding.utf8);
-                //print(jsonStr)
-              do {
-                    let dic = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(dic)
-                } catch let error{
-                    print(error.localizedDescription);
-                }
-            }
-        } as URLSessionDataTask
-        
-        //5、启动任务
-        dataTask.resume()
-        
-        let btn = UIButton()
-        btn.setTitleColor(.red, for: .normal)
-        btn.setTitle("小组件", for: .normal)
-        btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
-        btn.addTarget(self, action: #selector(clicktBtn1), for: .touchUpInside)
-        self.view.addSubview(btn)
+}
+
+
+extension RootViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.array.count
     }
     
-    @objc func clicktBtn1() {
-        let vc = WidgetController()
-        self.navigationController?.pushViewController(vc, animated: true)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        switch indexPath.row {
+        case CellType.widget.rawValue:
+            cell.textLabel?.text = "小组件"
+        case CellType.senior.rawValue:
+            cell.textLabel?.text = "高阶函数"
+        case CellType.cgdTimer.rawValue:
+            cell.textLabel?.text = "CGD定时器"
+        case CellType.generic.rawValue:
+            cell.textLabel?.text = "泛型"
+        default:
+            break
+        }
+        return cell
     }
     
-    // MARK: Swift高阶函数
-    func initSenior() {
-       // map
-       mapDemo()
-       mapListDemo()
-       
-       // flatMap
-       flatMapDemo()
-       flatMapListDemo()
-
-       // compactMap
-       compactMapDemo()
-       compactMapListDemo()
-
-       
-       // map 和 flatMap 和 compactMap区别
-       mapAndFlatMapAndCompactMapDiffent()
-
-       // reduce
-       reduceDemo()
-
-       // filter
-       filterDemo()
-
-       // shuffled
-       shuffledDemo()
-       
-       // prefix
-       prefixDemo()
-
-       // suffix
-       suffixDemo()
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case CellType.widget.rawValue:
+            let vc = WidgetController()
+            vc.type = .widget
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.senior.rawValue:
+            let vc = BaseController()
+            vc.type = .senior
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.cgdTimer.rawValue:
+            let vc = TimerController()
+            vc.type = .cgdTimer
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.generic.rawValue:
+            let vc = BaseController()
+            vc.type = .generic
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
     }
-    
-    // MARK: 泛型
-    func initGeneric() {
-        // MARK: 泛型例子
-        showGenericNumList(numList: [1,2,3])
-        showGenericStringList(strList: ["你","我","他"])
-
-        showGenericTList(tList: [1,2,3])
-        showGenericTList(tList: ["你","我","他"])
-
-        // MARK: 关联类使用范性
-        let sInt = StatesInt()
-        sInt.demo(item: 1)
-
-        let sT = StatesT<String>()
-        sT.demo(item: "good")
-
-        // MARK: Where 语句
-        let sT1 = StatesT<String>()
-        let sT2 = StatesT<Int>()
-        // 类型不相同错误 Global function 'ZStateTypeWhere(z1:z2:)' requires the types 'StatesInt.StateType' (aka 'Int') and 'String' be equivalent
-//        ZStateTypeWhere(z1: sT1, z2: sT2)
-        ZStateTypeWhere(z1: sT1, z2: sT1)
-
-        // MARK: 泛型和Ang
-        showGeneric(n: 1)
-        showAny(n: 1)
-    }
-
-    // MARK: CGD定时器
-    func initGCDTimer() {
-       let btn = UIButton()
-       btn.setTitleColor(.red, for: .normal)
-       btn.setTitle("CGD定时器", for: .normal)
-       btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
-       btn.addTarget(self, action: #selector(clicktBtn), for: .touchUpInside)
-       self.view.addSubview(btn)
-    }
-    
-    @objc func clicktBtn() {
-        let vc = TimerController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-
 }

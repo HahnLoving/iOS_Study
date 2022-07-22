@@ -2,7 +2,7 @@
 cd `dirname $0`;
 mkdir Payload;
 echo =============================打包中=============================;
-cp -rf /Users/zhahn/Library/Developer/Xcode/DerivedData/StudySwift-dculknpqrgsqfkenmurhoqdyyuez/Build/Products/Debug-iphoneos/StudySwift.app Payload;
+cp -rf /Users/zhahn/Library/Developer/Xcode/DerivedData/StudySwift-dculknpqrgsqfkenmurhoqdyyuez/Build/Products/Debug-iphonesimulator/StudySwift.app Payload;
 zip -r -q appstore.ipa Payload;
 rm -rf Payload;
 echo =============================打包完成=============================;
