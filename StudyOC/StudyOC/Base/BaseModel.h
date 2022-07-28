@@ -13,9 +13,12 @@ typedef NS_OPTIONS(NSUInteger, CellType) {
     CellTypeWidget = 0, // 小组件
     CellTypeCategory = 1, // 分类和扩展
     CellTypeCGDTimer = 2, // CGD 定时器
+    CellTypeMemory = 3, // 内存管理
 };
 
 @interface BaseModel : NSObject
+
+@property (nonatomic, copy) NSString *testStr;
 
 @end
 

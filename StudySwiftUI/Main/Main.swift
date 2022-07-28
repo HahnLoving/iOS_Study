@@ -97,9 +97,9 @@ struct PlaceholderView : View {
 struct MainWidget: WidgetBundle {
     @WidgetBundleBuilder
     var body: some Widget {
-        NetWorkData(title: "网络请求小组件", desc: "网络请求小组件列表")
-        NetWorkImage(title: "网络图片小组件", desc: "网络图片小组件列表")
-        Edit(title: "编辑小组件", desc: "编辑小组件列表")
+//        NetWorkData(title: "网络请求小组件", desc: "网络请求小组件列表")
+//        NetWorkImage(title: "网络图片小组件", desc: "网络图片小组件列表")
+//        Edit(title: "编辑小组件", desc: "编辑小组件列表")
         AppData(title: "app数据交互小组件", desc: "app数据交互小组件列表")
     }
 }

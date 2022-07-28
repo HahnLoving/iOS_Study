@@ -11,6 +11,7 @@
 #import "BaseController+Category.h"
 #import "TimerController.h"
 #import "WidgetController.h"
+#import "MemoryController.h"
 
 @interface RootController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,7 +27,8 @@
         _array = @[
             [NSNumber numberWithInteger:CellTypeWidget],
             [NSNumber numberWithInteger:CellTypeCategory],
-            [NSNumber numberWithInteger:CellTypeCGDTimer]
+            [NSNumber numberWithInteger:CellTypeCGDTimer],
+            [NSNumber numberWithInteger:CellTypeMemory],
         ];
     }
     return _array;
@@ -68,6 +70,10 @@
             cell.textLabel.text = @"CGD 定时器";
             break;
             
+        case CellTypeMemory:
+            cell.textLabel.text = @"内存管理";
+            break;
+            
         default:
             break;
     }
@@ -96,6 +102,14 @@
         {
             TimerController *vc = [TimerController new];
             vc.type = CellTypeCGDTimer;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case CellTypeMemory:
+        {
+            MemoryController *vc = [MemoryController new];
+            vc.type = CellTypeMemory;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

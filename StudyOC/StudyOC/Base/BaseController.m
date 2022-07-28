@@ -34,6 +34,10 @@
             self.title = @"CGD 定时器";
             break;
             
+        case CellTypeMemory:
+            self.title = @"内存管理";
+            break;
+            
         default:
             break;
     }

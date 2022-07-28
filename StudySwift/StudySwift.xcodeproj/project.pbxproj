@@ -15,6 +15,7 @@
 		AA20S5301836NVF03489ZA04 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAQG0B3Y3B18NE4GN43XVYH9 /* Generic.swift */; };
 		AA2O255950404QH010203OB9 /* CGDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA940I7R43JQK860P3P36382 /* CGDTimer.swift */; };
 		AA35W3Y3123146N17Z8N78J3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA09059W6159SG9PX2J5425T /* ViewController.swift */; };
+		AA6000D9288E583300D51936 /* AsyncAndAwaitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6000D8288E583300D51936 /* AsyncAndAwaitController.swift */; };
 		AA6H13T1E1Y3022031055081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAOQ4L8G245YL6K7345GI89F /* Main.storyboard */; };
 		AA7VH042293100H3037V43W1 /* SwiftSenior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAQPU24732U1BH6103N6Z444 /* SwiftSenior.swift */; };
 		AA8X1ZFBUP305J612352713B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2262R6VXEO2EK29P6Z3709 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		AAAF07CE2866FFD8004F8B9C /* WidgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */; };
 		AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A8A288AA4DA00766570 /* BaseController.swift */; };
 		AAD95A8E288AA50000766570 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A8D288AA50000766570 /* General.swift */; };
+		AAE2BA5B2890E9020022BF97 /* MemoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BA5A2890E9020022BF97 /* MemoryController.swift */; };
 		AAL48824555C8M9785J9BI1U /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA970M0K29N393I0016ANHE8 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,7 @@
 		AA3828Z45702G4E375Z865NU /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA3H9814169V5L0R63B88028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA55F122L55MIW8C46624099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA6000D8288E583300D51936 /* AsyncAndAwaitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAndAwaitController.swift; sourceTree = "<group>"; };
 		AA8I42XC416677HM583S1C8H /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA8J14C9838W243382W3T96P /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		AA940I7R43JQK860P3P36382 /* CGDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDTimer.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetController.swift; sourceTree = "<group>"; };
 		AAD95A8A288AA4DA00766570 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		AAD95A8D288AA50000766570 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		AAE2BA5A2890E9020022BF97 /* MemoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryController.swift; sourceTree = "<group>"; };
 		AAQG0B3Y3B18NE4GN43XVYH9 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		AAQPU24732U1BH6103N6Z444 /* SwiftSenior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSenior.swift; sourceTree = "<group>"; };
 		BBF0E2262969B2CE37F7A857 /* Pods_StudySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +167,8 @@
 				AA87FI72GLE1029450CH1H38 /* Swift高阶函数 */,
 				AA143Q321I3CVHO530117H7E /* CGD定时器 */,
 				AA7R582RHEX04360B4YK726J /* 泛型 */,
+				AA4A9A7F288E5761008ECAFC /* async和await */,
+				AAE2BA592890E8E60022BF97 /* 内存管理 */,
 				AAOQ4L8G245YL6K7345GI89F /* Main.storyboard */,
 				AA3H9814169V5L0R63B88028 /* Assets.xcassets */,
 				AA2687Y774Y22057F15422ZX /* LaunchScreen.storyboard */,
@@ -187,6 +193,14 @@
 				AAAF078D2866BB43004F8B9C /* MainExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4A9A7F288E5761008ECAFC /* async和await */ = {
+			isa = PBXGroup;
+			children = (
+				AA6000D8288E583300D51936 /* AsyncAndAwaitController.swift */,
+			);
+			path = "async和await";
 			sourceTree = "<group>";
 		};
 		AA7R582RHEX04360B4YK726J /* 泛型 */ = {
@@ -284,6 +298,14 @@
 				AAD95A8D288AA50000766570 /* General.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AAE2BA592890E8E60022BF97 /* 内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				AAE2BA5A2890E9020022BF97 /* MemoryController.swift */,
+			);
+			path = "内存管理";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,7 +497,9 @@
 			files = (
 				AA35W3Y3123146N17Z8N78J3 /* ViewController.swift in Sources */,
 				AA7VH042293100H3037V43W1 /* SwiftSenior.swift in Sources */,
+				AAE2BA5B2890E9020022BF97 /* MemoryController.swift in Sources */,
 				AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */,
+				AA6000D9288E583300D51936 /* AsyncAndAwaitController.swift in Sources */,
 				AA8X1ZFBUP305J612352713B /* AppDelegate.swift in Sources */,
 				AAAF07B82866C4AC004F8B9C /* Edit.intentdefinition in Sources */,
 				AAL48824555C8M9785J9BI1U /* SceneDelegate.swift in Sources */,
@@ -560,7 +584,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +670,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

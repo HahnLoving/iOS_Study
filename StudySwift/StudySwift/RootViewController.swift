@@ -10,7 +10,7 @@ import UIKit
 class RootViewController: UIViewController {
 
     var tableView: UITableView = UITableView()
-    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic]
+    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic, .asyncAndAwait, .memory]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,6 +50,10 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource{
             cell.textLabel?.text = "CGD定时器"
         case CellType.generic.rawValue:
             cell.textLabel?.text = "泛型"
+        case CellType.asyncAndAwait.rawValue:
+            cell.textLabel?.text = "async/await"
+        case CellType.memory.rawValue:
+            cell.textLabel?.text = "内存管理"
         default:
             break
         }
@@ -73,6 +77,14 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource{
         case CellType.generic.rawValue:
             let vc = BaseController()
             vc.type = .generic
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.asyncAndAwait.rawValue:
+            let vc = AsyncAndAwaitController()
+            vc.type = .asyncAndAwait
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.memory.rawValue:
+            let vc = MemoryController()
+            vc.type = .memory
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break

@@ -12,6 +12,9 @@
 		AA098AB12866B0A000192637 /* StudySwiftUI.entitlements in Sources */ = {isa = PBXBuildFile; fileRef = AA098AB02866B0A000192637 /* StudySwiftUI.entitlements */; };
 		AA29282ZU5Q950A234O46T4A /* ___SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA777P9Q50L1KZB61Y0647Y0 /* ___SwiftUIApp.swift */; };
 		AA2IE53R59O391B4G30E995P /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAH10K762J16I87QAB446944 /* TimerView.swift */; };
+		AA4A9A79288C23AF008ECAFC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A9A78288C23AF008ECAFC /* BaseView.swift */; };
+		AA4A9A7B288C252D008ECAFC /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A9A7A288C252D008ECAFC /* ExampleView.swift */; };
+		AA4A9A7E288E313A008ECAFC /* AsyncAndAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A9A7D288E313A008ECAFC /* AsyncAndAwaitView.swift */; };
 		AA65B212G24F24R44YC6300L /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAOR79Z7882Y351L8184I53B /* ContentView.swift */; };
 		AA8036925581BFE815375P4S /* NetWorkData.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA14R0471Y5G082FJ8X54571 /* NetWorkData.intentdefinition */; };
 		AA89297JY0262EWRP9F9592B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2HM1W95261F151M933I43K /* Preview Assets.xcassets */; };
@@ -40,6 +43,7 @@
 		AAD95A93288AAB6300766570 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A92288AAB6300766570 /* General.swift */; };
 		AAD95A95288AEE8400766570 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A94288AEE8400766570 /* GenericView.swift */; };
 		AAD95A97288AF00500766570 /* SwiftSeniorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A96288AF00500766570 /* SwiftSeniorView.swift */; };
+		AAE2BA5E28910CE90022BF97 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BA5D28910CE90022BF97 /* MemoryView.swift */; };
 		AAK392BJ2Y3201A05ON4B8T2 /* SwiftSenior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2IZJ40N26745IK00Y34137 /* SwiftSenior.swift */; };
 		AAN815E954EF2APA6765E663 /* AppData.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA82UD173T33A285N1EBMXKH /* AppData.intentdefinition */; };
 		AAR22H45535998511LR7X72K /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAX059M12356L12714E226L2 /* Assets.xcassets */; };
@@ -86,6 +90,9 @@
 		AA2HM1W95261F151M933I43K /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA2IZJ40N26745IK00Y34137 /* SwiftSenior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSenior.swift; sourceTree = "<group>"; };
 		AA35V220TK42077470808057 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AA4A9A78288C23AF008ECAFC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		AA4A9A7A288C252D008ECAFC /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		AA4A9A7D288E313A008ECAFC /* AsyncAndAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAndAwaitView.swift; sourceTree = "<group>"; };
 		AA4X21NC85J202595E536206 /* Edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
 		AA5LJ2I10Y7820M10405G98R /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA618478ELR0Q9A4E14A53X0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -106,6 +113,7 @@
 		AAD95A92288AAB6300766570 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		AAD95A94288AEE8400766570 /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		AAD95A96288AF00500766570 /* SwiftSeniorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSeniorView.swift; sourceTree = "<group>"; };
+		AAE2BA5D28910CE90022BF97 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 		AAFV34070N27EG192Y944996 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		AAH10K762J16I87QAB446944 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		AAOR79Z7882Y351L8184I53B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,10 +192,20 @@
 				AAB93GK40E7BW951295DZ905 /* Swift高阶函数 */,
 				AAA347IJ63D140A3W5C2T660 /* CGD定时器 */,
 				AA79535N7QK2380FN5S4EA61 /* 泛型 */,
+				AA4A9A7C288E2FBD008ECAFC /* async和await */,
+				AAE2BA5C2890EAC50022BF97 /* 内存管理 */,
 				AAX059M12356L12714E226L2 /* Assets.xcassets */,
 				AA34QJX0E6X22897645G7860 /* Preview Content */,
 			);
 			path = StudySwiftUI;
+			sourceTree = "<group>";
+		};
+		AA4A9A7C288E2FBD008ECAFC /* async和await */ = {
+			isa = PBXGroup;
+			children = (
+				AA4A9A7D288E313A008ECAFC /* AsyncAndAwaitView.swift */,
+			);
+			path = "async和await";
 			sourceTree = "<group>";
 		};
 		AA5Q89449K672273C9ODW78V /* Widget */ = {
@@ -268,8 +286,18 @@
 			isa = PBXGroup;
 			children = (
 				AAD95A92288AAB6300766570 /* General.swift */,
+				AA4A9A78288C23AF008ECAFC /* BaseView.swift */,
+				AA4A9A7A288C252D008ECAFC /* ExampleView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AAE2BA5C2890EAC50022BF97 /* 内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				AAE2BA5D28910CE90022BF97 /* MemoryView.swift */,
+			);
+			path = "内存管理";
 			sourceTree = "<group>";
 		};
 		AAT861TC8546298B49KC8C75 /* Products */ = {
@@ -485,6 +513,7 @@
 				AAC32R2WTL510J90Y63O8953 /* CGDTimer.swift in Sources */,
 				AA65B212G24F24R44YC6300L /* ContentView.swift in Sources */,
 				AAD95A95288AEE8400766570 /* GenericView.swift in Sources */,
+				AA4A9A7E288E313A008ECAFC /* AsyncAndAwaitView.swift in Sources */,
 				AA8F2F9B28669E49002C4719 /* TestWidget.swift in Sources */,
 				AAD95A97288AF00500766570 /* SwiftSeniorView.swift in Sources */,
 				AA8F2F2C2865F277002C4719 /* NetWorkImage.intentdefinition in Sources */,
@@ -494,6 +523,9 @@
 				AA098AB12866B0A000192637 /* StudySwiftUI.entitlements in Sources */,
 				AAD95A93288AAB6300766570 /* General.swift in Sources */,
 				AAK392BJ2Y3201A05ON4B8T2 /* SwiftSenior.swift in Sources */,
+				AAE2BA5E28910CE90022BF97 /* MemoryView.swift in Sources */,
+				AA4A9A79288C23AF008ECAFC /* BaseView.swift in Sources */,
+				AA4A9A7B288C252D008ECAFC /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +581,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -755,7 +787,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

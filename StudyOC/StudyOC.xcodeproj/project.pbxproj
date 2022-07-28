@@ -38,6 +38,7 @@
 		AA1646P10B795V43Z2ZK6041 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9L087W9I66230A110PU3J4 /* ViewController.m */; };
 		AA1V7J190D6F436W640XO585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE35IW43ZY5NK8K19G6637S /* LaunchScreen.storyboard */; };
 		AA5965W66854K72T6H254SQ6 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7Q488NPU4163US56E7P699 /* RootController.m */; };
+		AA6000E52890E23C00D51936 /* MemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6000E42890E23C00D51936 /* MemoryController.m */; };
 		AA625L8B011X156265J95M40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAO29G1619B48505324OB6A3 /* Main.storyboard */; };
 		AA6GU35C7C8293701676YPLF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7257N2Y2H1546I9SCJ0878 /* SceneDelegate.m */; };
 		AA6YS1M3I5734545C040AO68 /* TimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA92E55L016G95549386L3VQ /* TimerController.m */; };
@@ -109,6 +110,8 @@
 		AA2PEP74UE21KO10ET325997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA3N04237606C8E4Q92CPV4N /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA43AR559M61MCS14P2I230G /* GCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		AA6000E32890E23C00D51936 /* MemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryController.h; sourceTree = "<group>"; };
+		AA6000E42890E23C00D51936 /* MemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryController.m; sourceTree = "<group>"; };
 		AA6M7E12564098O112M5G206 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		AA720661X799410866ND01ZO /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA7257N2Y2H1546I9SCJ0878 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -243,6 +246,15 @@
 			path = "分类和扩展";
 			sourceTree = "<group>";
 		};
+		AA6000DA2890E1A400D51936 /* 内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				AA6000E32890E23C00D51936 /* MemoryController.h */,
+				AA6000E42890E23C00D51936 /* MemoryController.m */,
+			);
+			path = "内存管理";
+			sourceTree = "<group>";
+		};
 		AA628EUOK14B46RS52QK4029 /* StudyOC */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +271,7 @@
 				AA098ACF2866B13900192637 /* 小组件 */,
 				AA49U34O522581F981463S11 /* 分类和扩展 */,
 				AA73WHT46I5DY3F350052U06 /* CGD定时器 */,
+				AA6000DA2890E1A400D51936 /* 内存管理 */,
 				AAO29G1619B48505324OB6A3 /* Main.storyboard */,
 				AA2PEP74UE21KO10ET325997 /* Assets.xcassets */,
 				AAE35IW43ZY5NK8K19G6637S /* LaunchScreen.storyboard */,
@@ -534,6 +547,7 @@
 				AA1646P10B795V43Z2ZK6041 /* ViewController.m in Sources */,
 				AA098AE22866B2B900192637 /* WidgetKitManager.swift in Sources */,
 				AA6YS1M3I5734545C040AO68 /* TimerController.m in Sources */,
+				AA6000E52890E23C00D51936 /* MemoryController.m in Sources */,
 				AA098AD22866B15B00192637 /* WidgetController.m in Sources */,
 				AA00G0F2YXV4826Y523MU946 /* AppDelegate.m in Sources */,
 				AA098AC82866B0E100192637 /* AppData.intentdefinition in Sources */,

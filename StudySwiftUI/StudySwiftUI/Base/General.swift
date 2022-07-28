@@ -12,4 +12,10 @@ enum CellType: Int {
     case senior = 1 // 高阶函数
     case cgdTimer = 2 // CGD 定时器
     case generic = 3 // 范性
+    case asyncAndAwait = 4 // async和await
+    case memory = 5 // 内存管理
+}
+
+struct BaseModel {
+    var testStr: String = ""
 }

@@ -25,6 +25,10 @@ class BaseController: UIViewController {
         case .generic:
             self.title = "泛型"
             initGeneric()
+        case .asyncAndAwait:
+            self.title = "async/await"
+        case .memory:
+            self.title = "内存管理"
         }
     }
     

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic]
+    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic, .asyncAndAwait, .memory]
     
     var body: some View {
         NavigationView
@@ -33,11 +33,20 @@ struct ContentView: View {
                         NavigationLink(destination: GenericView()) {
                             Text("泛型")
                         }
+                    case CellType.asyncAndAwait.rawValue:
+                        NavigationLink(destination: AsyncAndAwaitView()) {
+                            Text("async和await")
+                        }
+                    case CellType.memory.rawValue:
+                        NavigationLink(destination: MemoryView()) {
+                            Text("内存管理")
+                        }
                     default:
                         Text("")
                     }
                 }
             }
+            
         }
     }
     
