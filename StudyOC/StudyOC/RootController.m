@@ -84,6 +84,10 @@
     switch (indexPath.row) {
         case CellTypeWidget:
         {
+            /**
+             小组件
+             https://mp.weixin.qq.com/s/_DF_s_j49yroLf-gIID0Tw
+             */
             WidgetController *vc = [WidgetController new];
             vc.type = CellTypeWidget;
             [self.navigationController pushViewController:vc animated:YES];
@@ -92,6 +96,10 @@
             
         case CellTypeCategory:
         {
+            /**
+             分类和扩展
+             https://mp.weixin.qq.com/s?__biz=Mzg5Mjc1ODI5Nw==&mid=2247483744&idx=1&sn=c70ef6e419738a5c0a1cd22e50007330&chksm=c0387116f74ff800edafd96b55776da388809d3e2bbdb45e05712de60b3931b15c238ff22ffe&token=147400309&lang=zh_CN#rd
+             */
             BaseController *vc = [BaseController new];
             vc.type = CellTypeCategory;
             [self.navigationController pushViewController:vc animated:YES];
@@ -100,6 +108,10 @@
             
         case CellTypeCGDTimer:
         {
+            /**
+             CGD定时器
+             https://mp.weixin.qq.com/s/7cPyKK5_JtVEjT9Jvyp0gw
+             */
             TimerController *vc = [TimerController new];
             vc.type = CellTypeCGDTimer;
             [self.navigationController pushViewController:vc animated:YES];
@@ -108,6 +120,10 @@
             
         case CellTypeMemory:
         {
+            /**
+             内存管理机制
+             https://mp.weixin.qq.com/s/lRCUC_eTYb5N1MUwyXKWHg
+             */
             MemoryController *vc = [MemoryController new];
             vc.type = CellTypeMemory;
             [self.navigationController pushViewController:vc animated:YES];

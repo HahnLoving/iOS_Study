@@ -7,10 +7,7 @@
 
 import SwiftUI
 
-/**
- 内存管理机制
- https://mp.weixin.qq.com/s/lRCUC_eTYb5N1MUwyXKWHg
- */
+
 
 struct MemoryView: View {
 

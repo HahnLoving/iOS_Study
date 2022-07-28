@@ -7,11 +7,6 @@
 
 import UIKit
 
-/**
- 内存管理机制
- https://mp.weixin.qq.com/s/lRCUC_eTYb5N1MUwyXKWHg
- */
-
 class MemoryController: BaseController {
 
     override func viewDidLoad() {
