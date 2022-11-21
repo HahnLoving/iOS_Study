@@ -79,6 +79,12 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource{
              https://mp.weixin.qq.com/s/lRCUC_eTYb5N1MUwyXKWHg
              */
             cell.textLabel?.text = "内存管理"
+        case CellType.iap.rawValue:
+            /**
+             内存管理机制
+             https://mp.weixin.qq.com/s/lRCUC_eTYb5N1MUwyXKWHg
+             */
+            cell.textLabel?.text = "IAP 内购"
         default:
             break
         }
@@ -110,6 +116,10 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource{
         case CellType.memory.rawValue:
             let vc = MemoryController()
             vc.type = .memory
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.iap.rawValue:
+            let vc = IAPController()
+            vc.type = .iap
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break

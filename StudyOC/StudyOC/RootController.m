@@ -12,6 +12,7 @@
 #import "TimerController.h"
 #import "WidgetController.h"
 #import "MemoryController.h"
+#import "RunTimeController.h"
 
 @interface RootController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,6 +30,7 @@
             [NSNumber numberWithInteger:CellTypeCategory],
             [NSNumber numberWithInteger:CellTypeCGDTimer],
             [NSNumber numberWithInteger:CellTypeMemory],
+            [NSNumber numberWithInteger:CellTypeRunTime],
         ];
     }
     return _array;
@@ -72,6 +74,10 @@
             
         case CellTypeMemory:
             cell.textLabel.text = @"内存管理";
+            break;
+            
+        case CellTypeRunTime:
+            cell.textLabel.text = @"runtime";
             break;
             
         default:
@@ -126,6 +132,17 @@
              */
             MemoryController *vc = [MemoryController new];
             vc.type = CellTypeMemory;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case CellTypeRunTime:
+        {
+            /**
+             内存管理机制
+             */
+            RunTimeController *vc = [RunTimeController new];
+            vc.type = CellTypeRunTime;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

@@ -16,6 +16,7 @@
 		AA2O255950404QH010203OB9 /* CGDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA940I7R43JQK860P3P36382 /* CGDTimer.swift */; };
 		AA35W3Y3123146N17Z8N78J3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA09059W6159SG9PX2J5425T /* ViewController.swift */; };
 		AA6000D9288E583300D51936 /* AsyncAndAwaitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6000D8288E583300D51936 /* AsyncAndAwaitController.swift */; };
+		AA62D9A628C849A200EB4477 /* IAPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62D9A528C849A200EB4477 /* IAPController.swift */; };
 		AA6H13T1E1Y3022031055081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAOQ4L8G245YL6K7345GI89F /* Main.storyboard */; };
 		AA7VH042293100H3037V43W1 /* SwiftSenior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAQPU24732U1BH6103N6Z444 /* SwiftSenior.swift */; };
 		AA8X1ZFBUP305J612352713B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2262R6VXEO2EK29P6Z3709 /* AppDelegate.swift */; };
@@ -86,6 +87,7 @@
 		AA3H9814169V5L0R63B88028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA55F122L55MIW8C46624099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6000D8288E583300D51936 /* AsyncAndAwaitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAndAwaitController.swift; sourceTree = "<group>"; };
+		AA62D9A528C849A200EB4477 /* IAPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPController.swift; sourceTree = "<group>"; };
 		AA8I42XC416677HM583S1C8H /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA8J14C9838W243382W3T96P /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		AA940I7R43JQK860P3P36382 /* CGDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDTimer.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				AA7R582RHEX04360B4YK726J /* 泛型 */,
 				AA4A9A7F288E5761008ECAFC /* async和await */,
 				AAE2BA592890E8E60022BF97 /* 内存管理 */,
+				AA62D9A428C8497000EB4477 /* IAP内购 */,
 				AAOQ4L8G245YL6K7345GI89F /* Main.storyboard */,
 				AA3H9814169V5L0R63B88028 /* Assets.xcassets */,
 				AA2687Y774Y22057F15422ZX /* LaunchScreen.storyboard */,
@@ -201,6 +204,14 @@
 				AA6000D8288E583300D51936 /* AsyncAndAwaitController.swift */,
 			);
 			path = "async和await";
+			sourceTree = "<group>";
+		};
+		AA62D9A428C8497000EB4477 /* IAP内购 */ = {
+			isa = PBXGroup;
+			children = (
+				AA62D9A528C849A200EB4477 /* IAPController.swift */,
+			);
+			path = "IAP内购";
 			sourceTree = "<group>";
 		};
 		AA7R582RHEX04360B4YK726J /* 泛型 */ = {
@@ -499,6 +510,7 @@
 				AA7VH042293100H3037V43W1 /* SwiftSenior.swift in Sources */,
 				AAE2BA5B2890E9020022BF97 /* MemoryController.swift in Sources */,
 				AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */,
+				AA62D9A628C849A200EB4477 /* IAPController.swift in Sources */,
 				AA6000D9288E583300D51936 /* AsyncAndAwaitController.swift in Sources */,
 				AA8X1ZFBUP305J612352713B /* AppDelegate.swift in Sources */,
 				AAAF07B82866C4AC004F8B9C /* Edit.intentdefinition in Sources */,
@@ -748,6 +760,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E7E1B4F63C325D52B8BAB5D /* Pods-MainExtension.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = MainExtension.entitlements;
@@ -778,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27CE1EEC596565F309350FF5 /* Pods-MainExtension.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = MainExtension.entitlements;

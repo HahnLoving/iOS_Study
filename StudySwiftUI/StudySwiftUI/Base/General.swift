@@ -14,6 +14,7 @@ enum CellType: Int {
     case generic = 3 // 范性
     case asyncAndAwait = 4 // async和await
     case memory = 5 // 内存管理
+    case liveActivity = 6 // 灵动岛
 }
 
 struct BaseModel {

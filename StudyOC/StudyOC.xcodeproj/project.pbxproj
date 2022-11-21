@@ -46,6 +46,7 @@
 		AAD95A83288A9E0500766570 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A82288A9E0500766570 /* BaseController.m */; };
 		AAD95A86288A9E6C00766570 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A85288A9E6C00766570 /* BaseModel.m */; };
 		AAD95A89288AA01F00766570 /* BaseController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A88288AA01F00766570 /* BaseController+Category.m */; };
+		AAE2BA62289775380022BF97 /* RunTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BA61289775380022BF97 /* RunTimeController.m */; };
 		AAP50P226J61O3658802913A /* PersonModel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AA99836M323RM18617W87AK6 /* PersonModel+Category.m */; };
 		AAY1L4A38Q91P01F44C5192K /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAV0N8JB395BY71N23I16K52 /* PersonModel.m */; };
 		AAZ061M7D4H3C0M5F7JZ5006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2PEP74UE21KO10ET325997 /* Assets.xcassets */; };
@@ -128,6 +129,8 @@
 		AAD95A85288A9E6C00766570 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		AAD95A87288AA01F00766570 /* BaseController+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseController+Category.h"; sourceTree = "<group>"; };
 		AAD95A88288AA01F00766570 /* BaseController+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseController+Category.m"; sourceTree = "<group>"; };
+		AAE2BA60289775380022BF97 /* RunTimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeController.h; sourceTree = "<group>"; };
+		AAE2BA61289775380022BF97 /* RunTimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeController.m; sourceTree = "<group>"; };
 		AAI756U16N062170M08T8702 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AAN4214AT92039X307D9YQM0 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		AAO6P0D1211092H8834B1MY4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -272,6 +275,7 @@
 				AA49U34O522581F981463S11 /* 分类和扩展 */,
 				AA73WHT46I5DY3F350052U06 /* CGD定时器 */,
 				AA6000DA2890E1A400D51936 /* 内存管理 */,
+				AAE2BA5F289767180022BF97 /* runtime */,
 				AAO29G1619B48505324OB6A3 /* Main.storyboard */,
 				AA2PEP74UE21KO10ET325997 /* Assets.xcassets */,
 				AAE35IW43ZY5NK8K19G6637S /* LaunchScreen.storyboard */,
@@ -315,6 +319,15 @@
 				AAD95A85288A9E6C00766570 /* BaseModel.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AAE2BA5F289767180022BF97 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				AAE2BA60289775380022BF97 /* RunTimeController.h */,
+				AAE2BA61289775380022BF97 /* RunTimeController.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		C3A26E3BD8B4504FDA0FC82A /* Pods */ = {
@@ -539,6 +552,7 @@
 			files = (
 				AAD95A86288A9E6C00766570 /* BaseModel.m in Sources */,
 				AA098AC32866B0E100192637 /* Edit.intentdefinition in Sources */,
+				AAE2BA62289775380022BF97 /* RunTimeController.m in Sources */,
 				AA098AC52866B0E100192637 /* NetWorkData.intentdefinition in Sources */,
 				AA098AC62866B0E100192637 /* NetWorkImage.intentdefinition in Sources */,
 				AAP50P226J61O3658802913A /* PersonModel+Category.m in Sources */,
@@ -610,7 +624,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---OC.Main";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift.Main";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -642,7 +656,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---OC.Main";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift.Main";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -678,7 +692,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "StudyOC/StudyOC-Bridging-Header.h";
@@ -765,7 +779,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "StudyOC/StudyOC-Bridging-Header.h";

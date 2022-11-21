@@ -40,6 +40,7 @@
 		AA8F2F962866969C002C4719 /* Edit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA8F2F942866969C002C4719 /* Edit.intentdefinition */; };
 		AA8F2F9B28669E49002C4719 /* TestWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8F2F9A28669E49002C4719 /* TestWidget.swift */; };
 		AAC32R2WTL510J90Y63O8953 /* CGDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B100M48IL9B07Z4193562 /* CGDTimer.swift */; };
+		AAD8DAFC292B56AF00961CC3 /* LiveActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8DAFB292B56AF00961CC3 /* LiveActivityView.swift */; };
 		AAD95A93288AAB6300766570 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A92288AAB6300766570 /* General.swift */; };
 		AAD95A95288AEE8400766570 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A94288AEE8400766570 /* GenericView.swift */; };
 		AAD95A97288AF00500766570 /* SwiftSeniorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A96288AF00500766570 /* SwiftSeniorView.swift */; };
@@ -110,6 +111,7 @@
 		AA8F2F9828669D43002C4719 /* MainExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainExtension.entitlements; sourceTree = "<group>"; };
 		AA8F2F9A28669E49002C4719 /* TestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWidget.swift; sourceTree = "<group>"; };
 		AA9M551584597D0TOEP45N87 /* ---SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "---SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AAD8DAFB292B56AF00961CC3 /* LiveActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityView.swift; sourceTree = "<group>"; };
 		AAD95A92288AAB6300766570 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		AAD95A94288AEE8400766570 /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		AAD95A96288AF00500766570 /* SwiftSeniorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSeniorView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				AA79535N7QK2380FN5S4EA61 /* 泛型 */,
 				AA4A9A7C288E2FBD008ECAFC /* async和await */,
 				AAE2BA5C2890EAC50022BF97 /* 内存管理 */,
+				AAD8DAFA292B568D00961CC3 /* 灵动岛 */,
 				AAX059M12356L12714E226L2 /* Assets.xcassets */,
 				AA34QJX0E6X22897645G7860 /* Preview Content */,
 			);
@@ -280,6 +283,14 @@
 				AAD95A96288AF00500766570 /* SwiftSeniorView.swift */,
 			);
 			path = "Swift高阶函数";
+			sourceTree = "<group>";
+		};
+		AAD8DAFA292B568D00961CC3 /* 灵动岛 */ = {
+			isa = PBXGroup;
+			children = (
+				AAD8DAFB292B56AF00961CC3 /* LiveActivityView.swift */,
+			);
+			path = "灵动岛";
 			sourceTree = "<group>";
 		};
 		AAD95A8F288AAB3C00766570 /* Base */ = {
@@ -371,7 +382,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					AA5S3380V4V83FYSA64AG80R = {
@@ -524,6 +535,7 @@
 				AAD95A93288AAB6300766570 /* General.swift in Sources */,
 				AAK392BJ2Y3201A05ON4B8T2 /* SwiftSenior.swift in Sources */,
 				AAE2BA5E28910CE90022BF97 /* MemoryView.swift in Sources */,
+				AAD8DAFC292B56AF00961CC3 /* LiveActivityView.swift in Sources */,
 				AA4A9A79288C23AF008ECAFC /* BaseView.swift in Sources */,
 				AA4A9A7B288C252D008ECAFC /* ExampleView.swift in Sources */,
 			);
@@ -576,6 +588,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "---SwiftUI-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -587,7 +600,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -675,7 +688,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---SwiftUI.Main";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift.Main";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -704,7 +717,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---SwiftUI.Main";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift.Main";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -782,6 +795,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "---SwiftUI-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -793,7 +807,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

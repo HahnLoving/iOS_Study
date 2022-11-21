@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.6.1)
   - HandyJSON (5.0.2)
+  - LookinServer (1.0.6)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
@@ -10,6 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - HandyJSON
+  - LookinServer
   - Moya
   - ObjectMapper
   - SwiftyJSON
@@ -18,6 +20,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - HandyJSON
+    - LookinServer
     - Moya
     - ObjectMapper
     - SwiftyJSON
@@ -25,10 +28,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  LookinServer: 18155b1e4a08213c236a1dd6b7ca52328a70a1e3
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 5dcd29b3bbf7337b18ca076af8dff53b6eddf27a
+PODFILE CHECKSUM: 8e0f8073c3c416e942823f423d7956f9930a90fb
 
 COCOAPODS: 1.11.3

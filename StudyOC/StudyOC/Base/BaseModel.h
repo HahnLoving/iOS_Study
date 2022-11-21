@@ -14,6 +14,7 @@ typedef NS_OPTIONS(NSUInteger, CellType) {
     CellTypeCategory = 1, // 分类和扩展
     CellTypeCGDTimer = 2, // CGD 定时器
     CellTypeMemory = 3, // 内存管理
+    CellTypeRunTime = 4, // runtime
 };
 
 @interface BaseModel : NSObject

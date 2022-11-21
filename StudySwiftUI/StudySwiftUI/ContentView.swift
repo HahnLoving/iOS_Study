@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic, .asyncAndAwait, .memory]
+    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic, .asyncAndAwait, .memory, .liveActivity]
     
     var body: some View {
         NavigationView
@@ -65,6 +65,13 @@ struct ContentView: View {
                          */
                         NavigationLink(destination: MemoryView()) {
                             Text("内存管理")
+                        }
+                    case CellType.liveActivity.rawValue:
+                        /**
+                         灵动岛
+                         */
+                        NavigationLink(destination: LiveActivityView()) {
+                            Text("灵动岛")
                         }
                     default:
                         Text("")

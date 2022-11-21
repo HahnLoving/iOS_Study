@@ -38,6 +38,10 @@
             self.title = @"内存管理";
             break;
             
+        case CellTypeRunTime:
+            self.title = @"runtime";
+            break;
+            
         default:
             break;
     }
