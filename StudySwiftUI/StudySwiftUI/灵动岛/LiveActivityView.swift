@@ -8,22 +8,58 @@
 import SwiftUI
 
 struct LiveActivityView: View {
-
-
+   @State var state: LiveActivityState = .hamburger
     var body: some View {
-        Text("灵动岛")
-        .onAppear {
-            print("name = \(self)")
-            
-            // 创建对象
-            var model = BaseModel()
-            
-            // 持有对象
-            var model1: Any = model
-            
-            withUnsafePointer(to: &model) {ptr in print(ptr)}
-            withUnsafePointer(to: &model1) {ptr in print(ptr)}
+        VStack {
+
+            VStack(spacing: 15) {
+                Button("启动灵动岛") {
+                    Task {
+                        if #available(iOS 16.1, *) {
+                            await LiveActivityUtils.request()
+                        } else {
+                            print("版本需要16.1")
+                        }
+                    }
+                }
+                
+                Button("更新灵动岛") {
+                    switch self.state {
+                    case .hamburger:
+                        self.state = .tea
+                    case .tea:
+                        self.state = .cookies
+                    case .cookies:
+                        self.state = .hamburger
+                    }
+                    if #available(iOS 16.1, *) {
+                        LiveActivityUtils.update(self.state)
+                    } else {
+                        print("版本需要16.1")
+                    }
+                }
+                
+                Button("停止灵动岛") {
+                    if #available(iOS 16.1, *) {
+                        LiveActivityUtils.end()
+                    } else {
+                        print("版本需要16.1")
+                    }
+                }
+                
+            }
+        }.onAppear {
+        }.onOpenURL { url in
+//            withAnimation {
+//                print("状态 = \(url)")
+//            }
         }
-        .navigationTitle("灵动岛")
+        .padding(.bottom, 50)
+        
+    
     }
+    
 }
+
+
+
