@@ -16,6 +16,7 @@ enum CellType: Int {
     case asyncAndAwait = 4 // async await
     case memory = 5 // 内存管理
     case iap = 6 // 内购
+    case liveActivity = 7 // 灵动岛
 }
 
 

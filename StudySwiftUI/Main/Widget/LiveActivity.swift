@@ -1,8 +1,10 @@
 //
 //  LiveActivity.swift
 //  StudySwiftUI
+//  StudySwift
 //
 //  Created by z Hahn on 2022/11/21.
+//  Created by z Hahn on 2022/11/25.
 //
 
 import ActivityKit

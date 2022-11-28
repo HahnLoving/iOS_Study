@@ -44,6 +44,10 @@
 		AAAF07CA2866C4EB004F8B9C /* NetWorkImage.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07AE2866C4AC004F8B9C /* NetWorkImage.intentdefinition */; };
 		AAAF07CB2866C4EE004F8B9C /* NetWorkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07AC2866C4AC004F8B9C /* NetWorkImage.swift */; };
 		AAAF07CE2866FFD8004F8B9C /* WidgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */; };
+		AAC2317A2930B65E0080BE02 /* LiveActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC231792930B65E0080BE02 /* LiveActivityViewController.swift */; };
+		AAC2317E2930B88C0080BE02 /* LiveActivityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2317D2930B88C0080BE02 /* LiveActivityUtils.swift */; };
+		AAC231802930B8E10080BE02 /* LiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2317F2930B8E10080BE02 /* LiveActivity.swift */; };
+		AAC231812930C4700080BE02 /* LiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2317F2930B8E10080BE02 /* LiveActivity.swift */; };
 		AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A8A288AA4DA00766570 /* BaseController.swift */; };
 		AAD95A8E288AA50000766570 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD95A8D288AA50000766570 /* General.swift */; };
 		AAE2BA5B2890E9020022BF97 /* MemoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BA5A2890E9020022BF97 /* MemoryController.swift */; };
@@ -114,6 +118,9 @@
 		AAAF07AF2866C4AC004F8B9C /* Edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
 		AAAF07B02866C4AC004F8B9C /* AppData.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = AppData.intentdefinition; sourceTree = "<group>"; };
 		AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetController.swift; sourceTree = "<group>"; };
+		AAC231792930B65E0080BE02 /* LiveActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityViewController.swift; sourceTree = "<group>"; };
+		AAC2317D2930B88C0080BE02 /* LiveActivityUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveActivityUtils.swift; sourceTree = "<group>"; };
+		AAC2317F2930B8E10080BE02 /* LiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivity.swift; sourceTree = "<group>"; };
 		AAD95A8A288AA4DA00766570 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		AAD95A8D288AA50000766570 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		AAE2BA5A2890E9020022BF97 /* MemoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryController.swift; sourceTree = "<group>"; };
@@ -172,6 +179,7 @@
 				AA4A9A7F288E5761008ECAFC /* async和await */,
 				AAE2BA592890E8E60022BF97 /* 内存管理 */,
 				AA62D9A428C8497000EB4477 /* IAP内购 */,
+				AAC231782930B4D00080BE02 /* 灵动岛 */,
 				AAOQ4L8G245YL6K7345GI89F /* Main.storyboard */,
 				AA3H9814169V5L0R63B88028 /* Assets.xcassets */,
 				AA2687Y774Y22057F15422ZX /* LaunchScreen.storyboard */,
@@ -289,6 +297,7 @@
 				AAAF07AA2866C4AC004F8B9C /* NetWorkData.swift */,
 				AAAF07AE2866C4AC004F8B9C /* NetWorkImage.intentdefinition */,
 				AAAF07AC2866C4AC004F8B9C /* NetWorkImage.swift */,
+				AAC2317F2930B8E10080BE02 /* LiveActivity.swift */,
 			);
 			name = Widget;
 			path = ../../StudySwiftUI/Main/Widget;
@@ -300,6 +309,15 @@
 				AAAF07CD2866FFD8004F8B9C /* WidgetController.swift */,
 			);
 			path = "小组件";
+			sourceTree = "<group>";
+		};
+		AAC231782930B4D00080BE02 /* 灵动岛 */ = {
+			isa = PBXGroup;
+			children = (
+				AAC231792930B65E0080BE02 /* LiveActivityViewController.swift */,
+				AAC2317D2930B88C0080BE02 /* LiveActivityUtils.swift */,
+			);
+			path = "灵动岛";
 			sourceTree = "<group>";
 		};
 		AAD95A8C288AA4DE00766570 /* Base */ = {
@@ -510,6 +528,7 @@
 				AA7VH042293100H3037V43W1 /* SwiftSenior.swift in Sources */,
 				AAE2BA5B2890E9020022BF97 /* MemoryController.swift in Sources */,
 				AAD95A8B288AA4DA00766570 /* BaseController.swift in Sources */,
+				AAC231802930B8E10080BE02 /* LiveActivity.swift in Sources */,
 				AA62D9A628C849A200EB4477 /* IAPController.swift in Sources */,
 				AA6000D9288E583300D51936 /* AsyncAndAwaitController.swift in Sources */,
 				AA8X1ZFBUP305J612352713B /* AppDelegate.swift in Sources */,
@@ -518,9 +537,11 @@
 				AA0K2F8L824XV30MIK7W3VS4 /* RootViewController.swift in Sources */,
 				AAAF07BD2866C4AC004F8B9C /* AppData.intentdefinition in Sources */,
 				AA2O255950404QH010203OB9 /* CGDTimer.swift in Sources */,
+				AAC2317E2930B88C0080BE02 /* LiveActivityUtils.swift in Sources */,
 				AAD95A8E288AA50000766570 /* General.swift in Sources */,
 				AA20S5301836NVF03489ZA04 /* Generic.swift in Sources */,
 				AAAF07CE2866FFD8004F8B9C /* WidgetController.swift in Sources */,
+				AAC2317A2930B65E0080BE02 /* LiveActivityViewController.swift in Sources */,
 				AA181K35XZM15I162M973614 /* TimerController.swift in Sources */,
 				AAAF07BB2866C4AC004F8B9C /* NetWorkImage.intentdefinition in Sources */,
 				AAAF07C92866C4E6004F8B9C /* NetWorkData.intentdefinition in Sources */,
@@ -535,6 +556,7 @@
 				AAAF07C72866C4E0004F8B9C /* NetWorkData.intentdefinition in Sources */,
 				AAAF07C12866C4C8004F8B9C /* ZModel.swift in Sources */,
 				AAAF07BE2866C4C3004F8B9C /* WidgetImageLoader.swift in Sources */,
+				AAC231812930C4700080BE02 /* LiveActivity.swift in Sources */,
 				AAAF07C62866C4DC004F8B9C /* Edit.swift in Sources */,
 				AAAF07C42866C4D5004F8B9C /* AppData.swift in Sources */,
 				AAAF07C22866C4C8004F8B9C /* MoyaConfig.swift in Sources */,
@@ -591,6 +613,7 @@
 				DEVELOPMENT_TEAM = XZ8P5P5Y4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StudySwift/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -602,7 +625,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hahn.study;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -677,6 +700,7 @@
 				DEVELOPMENT_TEAM = XZ8P5P5Y4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StudySwift/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -688,7 +712,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hahn.study;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -771,6 +795,7 @@
 				INFOPLIST_FILE = Main/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Main;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -778,7 +803,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift.Main";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hahn.study.Main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -802,6 +827,7 @@
 				INFOPLIST_FILE = Main/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Main;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -809,7 +835,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.hahn.Swift.---Swift.Main";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hahn.study.Main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -8,12 +8,15 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        application.registerForRemoteNotifications()
+        UNUserNotificationCenter.current().delegate = self
+        registerPushNotification()
         return true
     }
 
@@ -35,6 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("交互 = \(url)")
         return true
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
+        print("didReceive \(response)")
+    }
+    
+    // 注册通知
+    func registerPushNotification() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
 
+        }
+     }
 }
 

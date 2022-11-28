@@ -42,6 +42,10 @@
             self.title = @"runtime";
             break;
             
+        case CellTypeLiveActivity:
+            self.title = @"灵动岛";
+            break;
+            
         default:
             break;
     }

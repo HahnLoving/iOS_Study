@@ -13,6 +13,7 @@
 #import "WidgetController.h"
 #import "MemoryController.h"
 #import "RunTimeController.h"
+#import "LiveActivityViewController.h"
 
 @interface RootController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -31,6 +32,7 @@
             [NSNumber numberWithInteger:CellTypeCGDTimer],
             [NSNumber numberWithInteger:CellTypeMemory],
             [NSNumber numberWithInteger:CellTypeRunTime],
+            [NSNumber numberWithInteger:CellTypeLiveActivity],
         ];
     }
     return _array;
@@ -78,6 +80,10 @@
             
         case CellTypeRunTime:
             cell.textLabel.text = @"runtime";
+            break;
+            
+        case CellTypeLiveActivity:
+            cell.textLabel.text = @"灵动岛";
             break;
             
         default:
@@ -143,6 +149,17 @@
              */
             RunTimeController *vc = [RunTimeController new];
             vc.type = CellTypeRunTime;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case CellTypeLiveActivity:
+        {
+            /**
+             灵动岛
+             */
+            LiveActivityViewController *vc = [LiveActivityViewController new];
+            vc.type = CellTypeLiveActivity;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

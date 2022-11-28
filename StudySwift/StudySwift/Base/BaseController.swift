@@ -31,6 +31,8 @@ class BaseController: UIViewController {
             self.title = "内存管理"
         case .iap:
             self.title = "IAP 内购"
+        case .liveActivity:
+            self.title = "灵动岛"
         }
     }
     

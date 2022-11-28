@@ -10,7 +10,7 @@ import UIKit
 class RootViewController: UIViewController {
 
     var tableView: UITableView = UITableView()
-    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic, .asyncAndAwait, .memory]
+    var array: [CellType] = [.widget, .senior, .cgdTimer, .generic, .asyncAndAwait, .memory,.iap,.liveActivity]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -80,11 +80,13 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource{
              */
             cell.textLabel?.text = "内存管理"
         case CellType.iap.rawValue:
+            cell.textLabel?.text = "IAP 内购"
+        case CellType.liveActivity.rawValue:
             /**
              内存管理机制
              https://mp.weixin.qq.com/s/lRCUC_eTYb5N1MUwyXKWHg
              */
-            cell.textLabel?.text = "IAP 内购"
+            cell.textLabel?.text = "灵动岛"
         default:
             break
         }
@@ -120,6 +122,10 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource{
         case CellType.iap.rawValue:
             let vc = IAPController()
             vc.type = .iap
+            self.navigationController?.pushViewController(vc, animated: true)
+        case CellType.liveActivity.rawValue:
+            let vc = LiveActivityViewController()
+            vc.type = .liveActivity
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
